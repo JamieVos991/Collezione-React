@@ -1,3 +1,9 @@
+@font-face {
+    font-family: myFont;
+    src: url(./Files/euclid-circular-a-cufonfonts/Euclid\ Circular\ A\ Regular.ttf);
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +17,7 @@ html {
 body {
     background: #ffccc2;
     font-size: 2rem;
-    font-family: sans-serif;
+    font-family: myFont;
     height: 100vh;
 }
 

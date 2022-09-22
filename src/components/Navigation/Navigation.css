@@ -1,0 +1,52 @@
+@font-face {
+    font-family: myFontBold;
+    src: url(../../Files/euclid-circular-a-cufonfonts/Euclid\ Circular\ A\ Bold.ttf);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    padding: 4.5rem 0rem;
+}
+
+li, a, button {
+    text-decoration: none;
+}
+
+.nav__logo{
+    font-size: 2.5rem;
+    font-family: myFontBold;
+    cursor: pointer;
+    margin-left: 60px;
+    color: rgb(255, 92, 40);
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0rem 8rem;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+    color: #48001e;
+}
+
+.nav__links li a :hover{
+    color: rgb(255, 92, 40);
+}
+
+button {
+    padding: 1.5rem 6.2rem;
+    background: white;
+    font-size: 2rem;
+    color: #48001e;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
