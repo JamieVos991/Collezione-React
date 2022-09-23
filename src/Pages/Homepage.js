@@ -9,8 +9,13 @@ import Footer from "../components/Footer/Footer"
 const HomePage = () => {
     return (
         <>
-            <Navigation/>
-            <Header />
+            <Navigation />
+
+            <Header 
+                header__title = "Jordan1"
+                header__text = "aaaaaaaaaaaaa"
+            />
+
             <About />
             <Features />
             <Prijs />

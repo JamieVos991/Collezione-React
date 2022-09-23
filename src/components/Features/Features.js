@@ -2,7 +2,7 @@ import "./Features.css";
 
 const Features = () => {
     return(
-        <section className="section__features">
+        <section id="2" className="section__features">
             <h1>Features</h1>
         </section>
     );

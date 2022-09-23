@@ -3,19 +3,16 @@ import "./Navigation.css";
 const Navigation = (props) => {
 
     return (
-        <header>
-            <a className="nav__logo">Sneakers and co</a>
-            <nav>
-                <ul className="nav__links">
-                    
-                 
-                    <li><a href="#">Over</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Prijs</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a className="cta" href="#"><button>Login</button></a></li>
-                </ul>
-            </nav>
+        <header className="header__navigation">
+            <ul className="nav__links">
+                <li id="nav__logo"><a href="">Sneakers and Co</a></li>
+                <li><a href="#1">Home</a></li>
+                <li><a href="#2">Over</a></li>
+                <li><a href="#3">Features</a></li>
+                <li><a href="#4">Prijs</a></li>
+                <li><a href="#5">Contact</a></li>
+                <li id="Login"><a href="#">Login</a></li>
+            </ul>
         </header>
     );
 }

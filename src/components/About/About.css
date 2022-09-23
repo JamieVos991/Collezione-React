@@ -3,6 +3,24 @@
     height: 70vh;
     background: red;
     display: flex;
-    justify-content: center;
+    padding: 10rem;
     align-items: center;
+}
+
+.about__content {
+    height: 80%;
+    width: 100%;
+
+}
+
+.about__img {
+    position: relative;
+    top: -13.6rem;
+    float: right;
+    flex-direction: column;
+    width: 40rem;
+    height: 40rem;
+    background: url("../../../public/Files/pexels-varun-dubey-9778521.jpg"); 
+    background-size: cover;
+    background-position: center;
 }
