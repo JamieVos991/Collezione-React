@@ -1,0 +1,39 @@
+.header__boven {
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../../public/Files/pexels-varun-dubey-9778521.jpg"); 
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    color: #E7F6F2;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__content {
+    display: flex;
+    justify-content: flex-start;
+    height: 88%;
+    align-items: center;
+}
+
+.header__h1 {
+    font-size: 7rem;
+    margin-bottom: 1.2rem;
+}
+
+.header__p {
+    flex-basis: 50%;
+}
+
+.header__button {
+    padding: 1.5rem 6.2rem;
+    background: white;
+    font-size: 2rem;
+    color: #48001e;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    margin-top: 3rem;
+}

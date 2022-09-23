@@ -1,6 +1,6 @@
 @font-face {
     font-family: myFontBold;
-    src: url(../../Files/euclid-circular-a-cufonfonts/Euclid\ Circular\ A\ Bold.ttf);
+    src: url(../../../public/Files/euclid-circular-a-cufonfonts/Euclid\ Circular\ A\ Bold.ttf);
 }
 
 header {
@@ -50,3 +50,9 @@ button {
     border-radius: 0.2rem;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 1500px) {
+    .nav__links {
+      display: none;
+    }
+  }

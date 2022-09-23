@@ -1,6 +1,6 @@
 @font-face {
     font-family: myFont;
-    src: url(./Files/euclid-circular-a-cufonfonts/Euclid\ Circular\ A\ Regular.ttf);
+    src: url(../public/Files/euclid-circular-a-cufonfonts/Euclid\ Circular\ A\ Regular.ttf);
 }
 
 
@@ -19,6 +19,10 @@ body {
     font-size: 2rem;
     font-family: myFont;
     height: 100vh;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 #root {
