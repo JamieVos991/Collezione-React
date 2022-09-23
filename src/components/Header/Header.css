@@ -27,7 +27,7 @@
 svg {
     position: absolute;
     left: 0;
-    bottom: -15%;
+    bottom: -9.2%;
 }
 
 @media only screen and (max-width: 800px) {
@@ -39,5 +39,11 @@ svg {
 @media only screen and (max-width: 500px) {
     .header__h1 {
         font-size: 4rem;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    svg {
+        bottom: -14.2%;
     }
 }

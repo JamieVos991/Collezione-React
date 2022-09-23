@@ -9,7 +9,10 @@ import Footer from "../components/Footer/Footer"
 const HomePage = () => {
     return (
         <>
-            <Navigation />
+            <Navigation 
+                navigation__title = "Sneakers and Co"
+                navigation__login = "Login"
+            />
 
             <Header 
                 header__title = "Jordan1"

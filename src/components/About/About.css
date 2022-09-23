@@ -1,26 +1,74 @@
 .section__about  {
     width: 100%;
-    height: 70vh;
+    min-height: 70vh;
     background: red;
-    display: flex;
-    padding: 10rem;
-    align-items: center;
 }
 
-.about__content {
-    height: 80%;
-    width: 100%;
-
+.container {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 10rem;
 }
 
-.about__img {
-    position: relative;
-    top: -13.6rem;
+.content__section {
+    float: left;
+    width: 55%;
+}
+
+.image__section {
     float: right;
-    flex-direction: column;
-    width: 40rem;
-    height: 40rem;
-    background: url("../../../public/Files/pexels-varun-dubey-9778521.jpg"); 
-    background-size: cover;
-    background-position: center;
+    width: 40%;
+}
+
+.image__section img {
+    width: 100%;
+    height: auto;
+}
+
+.content__section .about__title {
+    margin-top: 20px;
+    color: black;
+}
+
+.content__section .content__about h3 {
+    margin-top: 20px;
+}
+
+.content__about .content__about p {
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+    }
+
+    .content__section {
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    .image__section {
+        float: none;
+        width: 100%;
+    }
+
+    .image__section img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+
+    .content__section .about__title {
+        text-align: center;
+        font-size: 19px;
+    }
 }
