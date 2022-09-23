@@ -7,6 +7,7 @@
     background-size: cover;
     display: flex;
     text-align: center;
+    position: relative;
     color: #E7F6F2;
     justify-content: center;
 }
@@ -25,9 +26,9 @@
 }
 
 svg {
-    position: absolute;
     left: 0;
-    bottom: -9.2%;
+    bottom: 0;
+    position: absolute;
 }
 
 @media only screen and (max-width: 800px) {
@@ -43,7 +44,7 @@ svg {
 }
 
 @media only screen and (min-width: 1500px) {
-    svg {
+    /* svg {
         bottom: -14.2%;
-    }
+    } */
 }
