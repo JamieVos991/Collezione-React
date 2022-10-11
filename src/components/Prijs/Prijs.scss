@@ -1,0 +1,70 @@
+.seciton__prijs {
+
+    width: 100%;
+    min-height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+$bright-color: #fff;
+@mixin bottom {
+ position: absolute;
+ right: 0;
+ left: 0;
+}
+
+
+.container__prijs {
+    background: url("https://images.unsplash.com/photo-1574007557239-acf6863bc375?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    height: 500px;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.315);
+    .container__info {
+     @include bottom;
+     bottom: 20%;
+     display: flex;
+     align-items: flex-end;
+     padding: 15px 30px;
+     color: $bright-color;
+     span {
+      margin-right: 20px;
+     }
+     i {
+      margin-right: 10px;
+     }
+    }
+    .container__profile {
+     background-color: #e4f2fd;
+     display: flex;
+     align-items: center;
+     padding: 20px;
+     @include bottom();
+     bottom: 0;
+     .img__prijs {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-position: center;
+      object-fit: cover;
+      margin-right: 10px;
+     }
+     h2 {
+      color: #334454;
+      font-size: 2rem;
+     }
+     p {
+      color: #a1b2bc;
+      font-size: 1.5rem;
+     }
+     p b {
+      font-style: italic;
+     }
+    }
+   }
+   

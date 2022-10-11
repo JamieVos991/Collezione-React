@@ -1,10 +1,10 @@
-import "./Footer.css";
+import "./Footer.scss";
 
 const Footer = () => {
-    return(
+    return (
         <section className="section__footer">
-            <h1>Footer</h1>
-        </section>
+         <h1>Footer</h1>
+        </section >
     );
 }
 

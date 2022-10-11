@@ -1,0 +1,98 @@
+$color_1: #48001e;
+$color_2: blue;
+$color_3: #fff;
+$background-color_1: #ff5c28;
+
+@font-face {
+    font-family: 'Euclid';
+    src: url("./euclid-circular-a-cufonfonts/Euclid\ Circular\ A\ Regular.ttf");
+}
+
+
+@media only screen and (max-width: 1500px) {
+	.nav__links {
+		display: none;
+	}
+
+	.header__navigation {
+		width: 100%;
+
+		.nav__logo__center {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+}
+
+@media only screen and (min-width: 1500px) {
+	.nav__logo {
+		margin-left: 3rem;
+	}
+}
+
+.header__navigation {
+	position: fixed;
+	font-family: 'Euclid', sans-serif;
+	width: 100%;
+	height: 9rem;
+	z-index: 99;
+	background: #ffccc2;
+	text-align: center;
+	padding: 3.4rem;
+
+	.nav__logo {
+		float: left;
+		text-decoration: none;
+		margin-top: 0rem;
+		font-weight: bolder;
+		font-family: sans-serif;
+		color: black;
+
+	}
+
+	li {
+		display: inline;
+		padding-left: 4rem;
+
+		a {
+			text-decoration: none;
+			padding: 1.3rem;
+			transition: .3s ease;
+			font-size: 1.6rem;
+			color: #48001e	;
+
+			&:hover {
+				font-size: 1.7rem;
+			}
+		}
+	}
+
+	ul {
+		#Login {
+			a {
+				color: $color_3;
+				background-color: $background-color_1;
+				border-radius: 0.2rem;
+				width: 13rem;
+				float: right;
+				position: relative;
+				top: -1rem;
+			}
+		}
+	}
+}
+
+.nav__onder {
+	position: fixed;
+	font-family: 'Euclid', sans-serif;
+	width: 100%;
+	height: 3rem;
+	margin-top: 3.1rem;
+	margin-left: -3.4rem;
+	z-index: 99;
+	background: #ffeae6;
+	text-align: center;
+}
+
+

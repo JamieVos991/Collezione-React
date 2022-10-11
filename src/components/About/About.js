@@ -1,17 +1,17 @@
-import "./About.css";
+import "./About.scss";
 import about__pic from "./123.jpg"
 
-const About = () => {
+const About = (props) => {
     return (
         <section id="1" className="section__about">
             <div className="container">
                 <div className="content__section">
                     <div className="about__title">
-                        <h1>Sneakers and co</h1>
+                        <h1>{props.about__h1}</h1>
                     </div>
                     <div className="content__about">
-                        <h3>aaaaaaaaaaaa</h3>
-                        <p>aaaaaaaaaaaaaaa</p>
+                        <h3>{props.about__h3}</h3>
+                        <p>{props.about__p}</p>
                     </div>
                 </div>
                 <div className="image__section">

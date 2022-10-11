@@ -10,16 +10,20 @@ const HomePage = () => {
     return (
         <>
             <Navigation 
-                navigation__title = "Sneakers and Co"
+                navigation__title = "SAC."
                 navigation__login = "Login"
             />
 
             <Header 
-                header__title = "Jordan1"
-                header__text = "aaaaaaaaaaaaa"
+                header__h1 = "Jordan1"
+                header__p = "aaaaaaaaaaaa"
             />
 
-            <About />
+            <About
+                about__h1 = "aaaaaaaaaaaaaa"
+                about__h3 = "bbbbbbbbbbbbbb"
+                about__p = "cccccccccccccc"
+            />
             <Features />
             <Prijs />
             <Contact />

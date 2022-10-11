@@ -1,9 +1,12 @@
-import "./Prijs.css";
+import "./Prijs.scss";
+import Prijscard from "./prijscard";
 
 const Prijs = () => {
     return (
         <section id="3" className="seciton__prijs">
-           <h1>Prijs</h1>
+            <Prijscard />
+            <Prijscard />
+            <Prijscard />
         </section>
     );
 }

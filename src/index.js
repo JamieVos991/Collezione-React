@@ -1,5 +1,5 @@
 // Importeren React
-import React from "react";
+import React from 'react';
 
 // Importren ReactDOM
 import ReactDOM from "react-dom/client";
