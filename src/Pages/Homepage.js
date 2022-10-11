@@ -20,9 +20,9 @@ const HomePage = () => {
             />
 
             <About
-                about__h1 = "aaaaaaaaaaaaaa"
-                about__h3 = "bbbbbbbbbbbbbb"
-                about__p = "cccccccccccccc"
+                about__h1 = "Durlinger Schoenen, blije voeten, blije mensen"
+                about__h3 = "Jordans"
+                about__p = "Online schoenen kopen doe jij bij Durlinger. Durlinger Schoenen is een familiebedrijf dat sinds 1881 voeten en mensen blij maakt met schoenen. Bij Durlinger koop je modisch comfortable schoenen voor het hele gezin die ook nog eens betaalbaar zijn. Je kunt terecht in 1 van onze 44 schoenenwinkels en natuurlijk kun je online schoenen bestellen. Bestellingen worden vanaf €49,- gratis bij je thuisbezorgd. Retourneren is gratis!"
             />
             <Features />
             <Prijs />

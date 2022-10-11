@@ -1,17 +1,21 @@
+@font-face {
+    font-family: 'Euclid';
+    src: url("../Navigation/euclid-circular-a-cufonfonts/Euclid\ Circular\ A\ Regular.ttf");
+}
+
 .section__contact {
 	background: #ffccc2;
 	height: 100vh;
 	width: 100%;
 	display: flex;
 	justify-content: center;
+	font-family: 'Euclid';
 	align-items: center;
 }
 
 $color_1: #777;
 $color_2: #FFF;
 $color_3: #888;
-$font-family_1: "Roboto", Helvetica, Arial, sans-serif;
-
 
 .container2 {
 	max-width: 400px;
@@ -21,7 +25,7 @@ $font-family_1: "Roboto", Helvetica, Arial, sans-serif;
 }
 #contact {
 	input[type="text"] {
-		font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+		font: 400 12px/16px;
 		width: 100%;
 		border: 1px solid #ccc;
 		background: #FFF;
@@ -35,7 +39,7 @@ $font-family_1: "Roboto", Helvetica, Arial, sans-serif;
 		}
 	}
 	input[type="email"] {
-		font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+		font: 400 12px/16px;
 		width: 100%;
 		border: 1px solid #ccc;
 		background: #FFF;
@@ -49,7 +53,7 @@ $font-family_1: "Roboto", Helvetica, Arial, sans-serif;
 		}
 	}
 	input[type="tel"] {
-		font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+		font: 400 12px/16px;
 		width: 100%;
 		border: 1px solid #ccc;
 		background: #FFF;
@@ -63,7 +67,7 @@ $font-family_1: "Roboto", Helvetica, Arial, sans-serif;
 		}
 	}
 	input[type="url"] {
-		font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+		font: 400 12px/16px;
 		width: 100%;
 		border: 1px solid #ccc;
 		background: #FFF;
@@ -77,7 +81,7 @@ $font-family_1: "Roboto", Helvetica, Arial, sans-serif;
 		}
 	}
 	textarea {
-		font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+		font: 400 12px/16px;
 		width: 100%;
 		border: 1px solid #ccc;
 		background: #FFF;
@@ -98,7 +102,7 @@ $font-family_1: "Roboto", Helvetica, Arial, sans-serif;
 		}
 	}
 	button[type="submit"] {
-		font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+		font: 400 12px/16px;
 		cursor: pointer;
 		width: 100%;
 		border: none;

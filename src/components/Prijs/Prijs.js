@@ -1,7 +1,7 @@
 import "./Prijs.scss";
 import Prijscard from "./prijscard";
 
-const Prijs = () => {
+const Prijs = (props) => {
     return (
         <section id="3" className="seciton__prijs">
             <Prijscard />

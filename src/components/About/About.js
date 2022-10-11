@@ -11,7 +11,7 @@ const About = (props) => {
                     </div>
                     <div className="content__about">
                         <h3>{props.about__h3}</h3>
-                        <p>{props.about__p}</p>
+                        <p style={{padding: "2rem 0 0 0"}}>{props.about__p}</p>
                     </div>
                 </div>
                 <div className="image__section">

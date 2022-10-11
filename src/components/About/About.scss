@@ -1,7 +1,13 @@
 $color_1: black;
 
+@font-face {
+    font-family: 'Euclid';
+    src: url("../Navigation/euclid-circular-a-cufonfonts/Euclid\ Circular\ A\ Regular.ttf");
+}
+
 .section__about {
 	width: 100%;
+	font-family: 'Euclid';
 	min-height: 70vh;
 	z-index: 99;
 	background: #f2eeeb;
@@ -23,7 +29,7 @@ $color_1: black;
 
 	.content__about {
 		h3 {
-			margin-top: 20px;
+			margin-top: 2rem;
 		}
 	}
 }
@@ -41,8 +47,8 @@ $color_1: black;
 .content__about {
 	.content__about {
 		p {
-			margin-top: 10px;
 			line-height: 1.5;
+			padding-top: 2rem;
 		}
 	}
 }

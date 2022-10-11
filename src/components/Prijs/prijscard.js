@@ -1,27 +1,20 @@
 import "./Prijs.scss";
 
-const prijscard = () => {
+const prijscard = (props) => {
     return (
 
-            <div class="container__prijs">
-                <div class="container__info">
-                    <span><i class="fas fa-eye"></i>1</span>
-                    <span><i class="fas fa-comment-alt"></i>1</span>
-                    <span><i class="fas fa-download"></i>1</span>
-                </div>
-                <div class="container__profile">
-                    <img
-                        className="img__prijs"
-                        src=""
-                        alt=""
-                    />
-                    <div class="container__profile__text">
-                        <h2>1</h2>
-                        <p>1 <b>1</b></p>
-                    </div>
-                </div> 
+        <>
+            <div class="product">
+                <span class="product__price">$120</span>
+                <img class="product__image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/26438/shoe.png"></img>
+                    <h1 class="product__title">Nike Roshe Run Print</h1>
+                    <hr />
+                    <p>The Nike Roshe One Print Men's Shoe offers breathability, lightweight cushioning and bold style with an injected unit midsole and colorful mesh upper. </p>
+                    <a href="#" class="product__btn btn">Buy Now</a>
             </div>
+        </>
     );
 }
 
 export default prijscard;
+
