@@ -16,7 +16,7 @@ const Navigation = (props) => {
                 <li><a href="#4">Contact</a></li>
                 <li id="Login"><a href="#">{props.navigation__login}</a></li>
             </ul>
-            <div className="nav__onder"></div>
+           
         </header>
         </>
     );

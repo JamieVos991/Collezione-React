@@ -32,14 +32,15 @@ $background-color_1: #ff5c28;
 }
 
 .header__navigation {
-	position: fixed;
+	
 	font-family: 'Euclid', sans-serif;
 	width: 100%;
-	height: 9rem;
+	height: 10rem;
+	position: fixed;
 	z-index: 99;
 	background: #ffccc2;
 	text-align: center;
-	padding: 3.4rem;
+	padding: 3.8rem;
 
 	.nav__logo {
 		float: left;
@@ -84,11 +85,10 @@ $background-color_1: #ff5c28;
 }
 
 .nav__onder {
-	position: fixed;
 	font-family: 'Euclid', sans-serif;
 	width: 100%;
 	height: 3rem;
-	margin-top: 3.1rem;
+	margin-top: 3.7rem;
 	margin-left: -3.4rem;
 	z-index: 99;
 	background: #ffeae6;

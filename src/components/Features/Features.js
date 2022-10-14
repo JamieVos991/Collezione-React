@@ -5,52 +5,52 @@ const Features = () => {
         <section id="2" className="section__features">
             <div class="grid-wrapper">
                 <div>
-                    <img src="https://images.unsplash.com/photo-1541845157-a6d2d100c931?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80" alt="" />
+                    <img src="https://5.imimg.com/data5/EQ/VC/YE/SELLER-17552598/adidas-future-craft-500x500.jpeg" alt="" />
                 </div>
                 <div>
-                    <img src="https://images.unsplash.com/photo-1588282322673-c31965a75c3e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1351&amp;q=80" alt="" />
+                    <img src="https://5.imimg.com/data5/ANDROID/Default/2021/7/AR/VC/EC/36086933/product-jpeg-500x500.jpg" alt="" />
                 </div>
                 <div class="tall">
-                    <img src="https://images.unsplash.com/photo-1588117472013-59bb13edafec?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""/>
+                    <img src="https://www.fashionbeans.com/wp-content/uploads/2019/05/best-air-jordans.jpg" alt=""/>
                 </div>
                 <div class="wide">
-                    <img src="https://images.unsplash.com/photo-1587588354456-ae376af71a25?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="" />
+                    <img src="https://library.sportingnews.com/styles/crop_style_16_9_mobile_2x/s3/2022-08/nba-plain--aad71a25-eb8b-40ce-a446-e54336dd78ef.jpeg?itok=fNwIBdLk" alt="" />
                 </div>
                 <div>
-                    <img src=" https://images.unsplash.com/photo-1558980663-3685c1d673c4?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=60" alt="" />
+                    <img src="https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/APSXLOGOIAI6ZN7OOTYJ3AT4UY.jpg&w=1440" alt="" />
                 </div>
                 <div class="tall">
-                    <img src="https://images.unsplash.com/photo-1588499756884-d72584d84df5?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=2134&amp;q=80" alt="" />
+                    <img src="https://i.shgcdn.com/d7d62973-1898-4aa1-8a1d-5f3aa272b9fe/-/format/auto/-/preview/3000x3000/-/quality/lighter/" alt="" />
                 </div>
                 <div class="big">
-                    <img src="https://images.unsplash.com/photo-1588492885706-b8917f06df77?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1951&amp;q=80" alt="" />
+                    <img src="https://www.nbcsports.com/sites/rsnunited/files/styles/article_hero_image/public/article/hero/jordnan-shoes.jpg" alt="" />
                 </div>
                 <div>
-                    <img src="https://images.unsplash.com/photo-1588247866001-68fa8c438dd7?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=564&amp;q=80" alt="" />
+                    <img src="https://cdn.cnn.com/cnnnext/dam/assets/200814092431-01b-michael-jordan-sneakers-auction-exlarge-169.jpg" alt="" />
                 </div>
                 <div class="wide">
-                    <img src="https://images.unsplash.com/photo-1586521995568-39abaa0c2311?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80" alt="" />
+                    <img src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ilcWaDz_BB.o/v0/1200x-1.jpg" alt="" />
                 </div>
                 <div class="big">
-                    <img src="https://images.unsplash.com/photo-1572914857229-37bf6ee8101c?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1951&amp;q=80" alt="" />
+                    <img src="https://images.lifestyleasia.com/wp-content/uploads/sites/7/2022/09/08135747/Untitled-design-3-3-1600x900.jpg" alt="" />
                 </div>
                 <div class="tall">
-                    <img src="https://images.unsplash.com/photo-1588453862014-cd1a9ad06a12?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80" alt="" />
+                    <img src="https://image.cnbcfm.com/api/v1/image/106792377-1605114286275-First-Ever-Air-Jordan-3.jpg?v=1655493100&w=1920&h=1080" alt="" />
                 </div>
                 <div>
-                    <img src="https://images.unsplash.com/photo-1588414734732-660b07304ddb?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=675&amp;q=80" alt="" />
+                    <img src="https://www.sportsdirect.com/images/marketing/jordan-thumb-1-m-220120.jpg" alt="" />
                 </div>
                 <div>
-                    <img src="https://images.unsplash.com/photo-1588224575346-501f5880ef29?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="" />
+                    <img src="https://graphics.chicagotribune.com/air-jordan-history/img/2005.jpg" alt="" />
                 </div>
                 <div>
-                    <img src="https://images.unsplash.com/photo-1574798834926-b39501d8eda2?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="" />
+                    <img src="https://images.footlocker.com/content/dam/final/kidsfootlocker/site/backpages/2021/asp/210831-kfl-asp-graphics-m-asp-jordan.jpg" alt="" />
                 </div>
                 <div>
-                    <img src="https://images.unsplash.com/photo-1547234935-80c7145ec969?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1353&amp;q=80" alt="" />
+                    <img src="https://www.papercitymag.com/wp-content/uploads/2020/04/https-hypebeast.com-image-2020-01-dior-air-jordan-1-low-high-first-look-1-1-1024x683.jpg" alt="" />
                 </div>
                 <div class="wide">
-                    <img src="https://images.unsplash.com/photo-1588263823647-ce3546d42bfe?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=675&amp;q=80" alt="" />
+                    <img src="https://www.si.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTcyMzAxMzQ5NTc5NDAwNzI5/air-jordan.jpg" alt="" />
                 </div>
             </div>
         </section>
