@@ -1,98 +1,110 @@
 $color_1: #48001e;
-$color_2: blue;
-$color_3: #fff;
-$background-color_1: #ff5c28;
+$color_2: #ffccc2;
+$color_3: #ff5c28;
 
 @font-face {
-    font-family: 'Euclid';
-    src: url("./euclid-circular-a-cufonfonts/Euclid\ Circular\ A\ Regular.ttf");
+	font-family: 'Euclid';
+	src: url("./euclid-circular-a-cufonfonts/Euclid\ Circular\ A\ Regular.ttf");
 }
 
-
-@media only screen and (max-width: 1500px) {
-	.nav__links {
-		display: none;
-	}
-
-	.header__navigation {
-		width: 100%;
-
-		.nav__logo__center {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
-	}
-}
-
-@media only screen and (min-width: 1500px) {
-	.nav__logo {
-		margin-left: 3rem;
-	}
-}
-
-.header__navigation {
-	
-	font-family: 'Euclid', sans-serif;
-	width: 100%;
+.header__nav {
+	display: flex;
+	justify-content: center;
 	height: 10rem;
+	font-size: 1.7rem;
+	align-items: center;
 	position: fixed;
-	z-index: 99;
-	background: #ffccc2;
-	text-align: center;
-	padding: 3.8rem;
-
-	.nav__logo {
-		float: left;
-		text-decoration: none;
-		margin-top: 0rem;
-		font-weight: bolder;
-		font-family: sans-serif;
-		color: black;
-
-	}
-
-	li {
-		display: inline;
-		padding-left: 4rem;
-
-		a {
-			text-decoration: none;
-			padding: 1.3rem;
-			transition: .3s ease;
-			font-size: 1.6rem;
-			color: #48001e	;
-
-			&:hover {
-				font-size: 1.7rem;
-			}
-		}
-	}
-
-	ul {
-		#Login {
-			a {
-				color: $color_3;
-				background-color: $background-color_1;
-				border-radius: 0.2rem;
-				width: 13rem;
-				float: right;
-				position: relative;
-				top: -1rem;
-			}
-		}
-	}
-}
-
-.nav__onder {
-	font-family: 'Euclid', sans-serif;
 	width: 100%;
-	height: 3rem;
-	margin-top: 3.7rem;
-	margin-left: -3.4rem;
 	z-index: 99;
-	background: #ffeae6;
-	text-align: center;
+	padding: 0 2rem;
+	background: $color_1;
+	color: $color_2;
+}
+
+.login__btn {
+	background-color: $color_3;
+	border: none;
+	position: absolute;
+	right: 0;
+	font-family: 'Euclid';
+	color: $color_1;
+	font-weight: 600;
+	margin-top: -.6rem;
+	margin-right: 4rem;
+	padding: 1.2rem 5rem;
+}
+
+nav a {
+	margin: 0 2rem;
+	text-decoration: none;
+}
+
+.nav__logo {
+	height: 80%;
+	position: absolute;
+	left: 2rem;
+}
+
+nav a:hover {
+	color: hsl(10, 100%, 78%);
+}
+
+.header__nav .nav__btn {
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	visibility: hidden;
+	opacity: 0;
+	font-size: 3rem;
 }
 
 
+@media only screen and (max-width: 1024px) {
+	.header__nav .nav__btn {
+		visibility: visible;
+		opacity: 1;
+		position: absolute;
+		top: 1.8rem;
+		padding: 0 0 4.7rem 2em;
+		right: 2rem;
+
+	}
+
+	.login__btn {
+		position: initial;
+		margin: 0;
+	}
+
+	.header__nav nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		z-index: 99;
+		justify-content: center;
+		flex-direction: column;
+		gap: 3.5rem;
+		background: $color_1;
+		transition: 1s;
+		transform: translateY(-100vh);
+	}
+
+	nav a {
+		font-size: 1.5rem;
+	}
+
+	nav .nav__btn--close {
+		position: absolute;
+		top: 1.8rem;
+		right: 2rem;
+	}
+
+	.header__nav .responsive__nav {
+		transform: none;
+	}
+}

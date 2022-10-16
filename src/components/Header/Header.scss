@@ -1,4 +1,6 @@
-$color_1: #E7F6F2;
+$color_1: #48001e;
+$color_2: #ffccc2;
+$color_3: #ff5c28;
 
 .header__boven {
 	// background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../public/Files/pexels-jd-danny-2385477\ \(1\).jpg");
@@ -9,14 +11,15 @@ $color_1: #E7F6F2;
 	background: rgba($color: #000000, $alpha: 0.3);
 	position: relative;
 	align-items: center;
-	color: $color_1;
+	color: $color_2;
+	border: 2rem solid $color_1;
 	justify-content: center;
 }
 
 .header__video {
 	position: absolute;
 	left: 0;
-	z-index: -1;
+	z-index: -99;
 	height: 116%;
 }
 
@@ -25,7 +28,6 @@ $color_1: #E7F6F2;
 	justify-content: center;
 	width: 40%;
 	height: 50%;
-	border: 1rem solid white	;
 	align-items: center;
 }
 
