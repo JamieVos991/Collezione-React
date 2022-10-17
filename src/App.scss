@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Euclid';
-    src: url("./components/Navigation/euclid-circular-a-cufonfonts/Euclid\ Circular\ A\ Regular.ttf");
+    src: url("./components/Navigation/Files/euclid-circular-a-cufonfonts/Euclid\ Circular\ A\ Regular.ttf");
 }
 
 * {
@@ -24,3 +24,9 @@ body {
 ::-webkit-scrollbar {
     display: none;
 }
+
+[data-theme="dark"] {
+	--font-color: #eee;
+	--background-color: #333;
+	--link-color: lightblue;
+  }

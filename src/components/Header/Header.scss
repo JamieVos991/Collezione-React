@@ -2,38 +2,45 @@ $color_1: #48001e;
 $color_2: #ffccc2;
 $color_3: #ff5c28;
 
+@font-face {
+	font-family: 'Euclid';
+	src: url("../Navigation/Files/euclid-circular-a-cufonfonts/Euclid\ Circular\ A\ Regular.ttf");
+}
 .header__boven {
-	// background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../public/Files/pexels-jd-danny-2385477\ \(1\).jpg");
 	height: 100vh;
 	width: 100%;
 	display: flex;
 	text-align: center;
-	background: rgba($color: #000000, $alpha: 0.3);
+	background: rgba($color: #000000, $alpha: 0.7);
 	position: relative;
 	align-items: center;
 	color: $color_2;
-	border: 2rem solid $color_1;
+	// border: 2rem solid $color_1;
 	justify-content: center;
 }
 
-.header__video {
+.header__background {
 	position: absolute;
-	left: 0;
-	z-index: -99;
-	height: 116%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	top: 50;
+	left: 50;
+	z-index: -1;
 }
 
 .header__content {
 	display: flex;
+	width: 100%;
+	padding-left: 5rem;
 	justify-content: center;
-	width: 40%;
-	height: 50%;
 	align-items: center;
 }
 
 .header__h1 {
     font-family: Bold;
-	font-size: 7rem;
+	font-size: 600%;
+	font-family: 'Euclid';
 	margin-bottom: 1rem;
 	font-weight: 800;
 }

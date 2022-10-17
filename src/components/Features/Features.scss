@@ -1,11 +1,15 @@
+$color_1: #48001e;
+$color_2: #ffccc2;
+$color_3: #ff5c28;
+
 .section__features {
-	background-color: #ffccc2;
+	background-color: $color_1;
     justify-content: center;
     align-items: center;
 	padding: 15px;
 }
 
-img {
+.img__features {
 	max-width: 100%;
 	height: auto;
 	vertical-align: middle;

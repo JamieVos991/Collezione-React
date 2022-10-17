@@ -4,7 +4,7 @@ $color_3: #ff5c28;
 
 @font-face {
 	font-family: 'Euclid';
-	src: url("./euclid-circular-a-cufonfonts/Euclid\ Circular\ A\ Regular.ttf");
+	src: url("./Files/euclid-circular-a-cufonfonts/Euclid\ Circular\ A\ Regular.ttf");
 }
 
 .header__nav {
@@ -34,13 +34,52 @@ $color_3: #ff5c28;
 	padding: 1.2rem 5rem;
 }
 
+.nav__mode {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 7rem;
+	right: 0;
+	margin-right: 20rem;
+	height: 3rem;
+	position: absolute;
+	cursor: pointer;
+	background: $color_2;
+	border-radius: 5rem;
+}
+
+.nav__mode::after {
+	content: "";
+	transition: 0.4s all;
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+	background: $color_3;
+	position: absolute;
+	top: 50%;
+	left: 45%;
+	transform: translate(30%, -50%);
+	transition-timing-function:cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+label {
+	background: blue;
+}
+
+.nav__mode:checked::after {
+	transform: translate(-110%, -50%);
+}
+
+.header__p {
+	font-size: 150%;
+}
+
 nav a {
 	margin: 0 2rem;
 	text-decoration: none;
 }
 
 .nav__logo {
-	height: 80%;
+	height: 75%;
 	position: absolute;
 	left: 2rem;
 }
@@ -69,7 +108,10 @@ nav a:hover {
 		top: 1.8rem;
 		padding: 0 0 4.7rem 2em;
 		right: 2rem;
+	}	
 
+	.nav__mode {
+		display: none;
 	}
 
 	.login__btn {
