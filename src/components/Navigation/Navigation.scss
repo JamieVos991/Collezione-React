@@ -7,26 +7,6 @@ $color_3: #ff5c28;
 	src: url("./Files/euclid-circular-a-cufonfonts/Euclid\ Circular\ A\ Regular.ttf");
 }
 
-.light {
-	.text {
-		color: $color_1;
-	}
-
-	.background {
-		background-color: $color_2;
-	}
-}
-
-.dark {
-	.text {
-		color: $color_2;
-	}
-
-	.background {
-		background-color: $color_1;
-	}
-}
-
 .header__nav {
 	display: flex;
 	justify-content: center;
