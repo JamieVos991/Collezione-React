@@ -67,9 +67,11 @@ p {
   width: 400px;
   padding: 40px;
   border-radius: 8px;
+  outline: 1rem solid red;
   background-color: $white;
   transition: box-shadow $time $easing;
   @include shadow;
+  z-index: 0;
 }
 
 .product__image {
@@ -78,6 +80,7 @@ p {
   margin-right: -40%;
   margin-top: -5px;
   margin-bottom: 30px;
+  position: relative;
   max-width: none;
 }
 

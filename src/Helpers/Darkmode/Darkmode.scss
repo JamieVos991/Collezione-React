@@ -1,0 +1,23 @@
+$color_1: #48001e;
+$color_2: #ffccc2;
+$color_3: #ff5c28;
+
+.light {
+	.text {
+		color: $color_1;
+	}
+
+	.background {
+		background-color: $color_2;
+	}
+}
+
+.dark {
+	.text {
+		color: $color_2;
+	}
+
+	.background {
+		background-color: $color_1;
+	}
+}

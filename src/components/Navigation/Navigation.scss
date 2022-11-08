@@ -7,18 +7,36 @@ $color_3: #ff5c28;
 	src: url("./Files/euclid-circular-a-cufonfonts/Euclid\ Circular\ A\ Regular.ttf");
 }
 
+.light {
+	.text {
+		color: $color_1;
+	}
+
+	.background {
+		background-color: $color_2;
+	}
+}
+
+.dark {
+	.text {
+		color: $color_2;
+	}
+
+	.background {
+		background-color: $color_1;
+	}
+}
+
 .header__nav {
 	display: flex;
 	justify-content: center;
-	height: 10rem;
+	height: 11rem;
 	font-size: 1.7rem;
 	align-items: center;
 	position: fixed;
 	width: 100%;
 	z-index: 99;
 	padding: 0 2rem;
-	background: $color_1;
-	color: $color_2;
 }
 
 .login__btn {
@@ -38,6 +56,7 @@ $color_3: #ff5c28;
 	-webkit-appearance: none;
 	appearance: none;
 	width: 7rem;
+	outline: 0.2rem solid black;
 	right: 0;
 	margin-right: 20rem;
 	height: 3rem;
@@ -60,6 +79,7 @@ $color_3: #ff5c28;
 	transform: translate(30%, -50%);
 	transition-timing-function:cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
+
 
 label {
 	background: blue;
