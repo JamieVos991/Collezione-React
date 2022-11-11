@@ -8,40 +8,38 @@ $color_3: #ff5c28;
     src: url("../Navigation/Files/euclid-circular-a-cufonfonts/Euclid\ Circular\ A\ Regular.ttf");
 }
 
-svg {
-	position: absolute;
-	top: 0;
-}
-
 .section__about {
 	width: 100%;
 	position: relative;
 	font-family: 'Euclid';
 	min-height: 70vh;
 	z-index: 99;
-	background: darkblue;
-	color: $color_2;
+	display: flex;
+	align-items: center;
+	background: $color_2;
+	color: $color_1;
 }
 .container {
 	width: 80%;
 	display: block;
 	margin: auto;
-	padding-top: 10rem;
+	padding-top: 5rem;
 }
 .content__section {
-	float: left;
-	width: 55%;
 
 	.about__title {
-		margin-top: 20px;
-		color: $color_2;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		gap: 2rem;
+		flex-direction: column;
+		color: $color_1;
+		text-transform:uppercase;
 	}
-
-	.content__about {
-		h3 {
-			margin-top: 2rem;
+		h4 {
+			font-size: 1.5rem;
 		}
-	}
+	
 }
 
 .image__section {
@@ -55,13 +53,14 @@ svg {
 }
 
 .content__about {
-	.content__about {
 		p {
 			line-height: 1.5;
-			padding-top: 4rem;
+			text-align: center;
+			padding-bottom: 2rem;
+
 		}
 	}
-}
+
 
 @media screen and (max-width: 768px) {
 	.container {

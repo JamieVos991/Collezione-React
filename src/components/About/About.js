@@ -9,15 +9,15 @@ const About = (props) => {
                 <div className="container">
                     <div className="content__section">
                         <div className="about__title">
+                            <h4>{props.about__h3}</h4> 
                             <h1>{props.about__h1}</h1>
                         </div>
                         <div className="content__about">
-                            <h3>{props.about__h3}</h3>
-                            <p style={{ padding: "2rem 0 0 0" }}>{props.about__p}</p>
+                            <p style={{ padding: "3rem 0 4rem 0" }}>{props.about__p}</p> 
                         </div>
                     </div>
                     <div className="image__section">
-                        <img src={about__pic} />
+                       
                     </div>
                 </div>
             </section>

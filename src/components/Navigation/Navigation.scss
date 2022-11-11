@@ -7,12 +7,28 @@ $color_3: #ff5c28;
 	src: url("./Files/euclid-circular-a-cufonfonts/Euclid\ Circular\ A\ Regular.ttf");
 }
 
+svg {
+	position: relative;
+	top: 0;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+  }
+  
+
 .header__nav {
 	display: flex;
 	justify-content: center;
 	height: 11rem;
+	position: -webkit-sticky;
+	position: sticky;
 	font-size: 1.7rem;
 	align-items: center;
+	color: $color_2;
+	background: $color_1;
 	width: 100%;
 	z-index: 99;
 	padding: 0 2rem;
