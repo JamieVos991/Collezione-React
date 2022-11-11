@@ -2,47 +2,40 @@ $color_1: #48001e;
 $color_2: #ffccc2;
 $color_3: #ff5c28;
 
-.section__features {
-	background-color: $color_1;
-    justify-content: center;
+.section__features{
+    background-color: rgb(15, 15, 15);
+    min-height: 100vh;
+    width: 100vw;
+    color: $color_2;
+    display: flex;
     align-items: center;
-	padding: 15px;
+    text-align: center;
 }
 
-.img__features {
-	max-width: 100%;
-	height: auto;
-	vertical-align: middle;
-	display: inline-block;
+.about {
+    width: 20%;
+    height: 50rem;
+    outline: 4px solid blue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
 }
 
-/* Main CSS */
-.grid-wrapper > div {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.grid-wrapper > div > img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	border-radius: 5px;
+.container-about {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
 }
 
-.grid-wrapper {
-	display: grid;
-	grid-gap: 10px;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-	grid-auto-rows: 200px;
-	grid-auto-flow: dense;
+i {
+    font-size: 600%;
 }
-.grid-wrapper .wide {
-	grid-column: span 2;
-}
-.grid-wrapper .tall {
-	grid-row: span 2;
-}
-.grid-wrapper .big {
-	grid-column: span 2;
-	grid-row: span 2;
+
+
+@media screen and (max-width: 1200px) {
+    .container-about {
+        flex-wrap: wrap;
+    }
 }

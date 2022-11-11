@@ -13,7 +13,6 @@ $color_3: #ff5c28;
 	height: 11rem;
 	font-size: 1.7rem;
 	align-items: center;
-	position: fixed;
 	width: 100%;
 	z-index: 99;
 	padding: 0 2rem;
@@ -79,8 +78,8 @@ nav a {
 }
 
 .nav__logo {
-	height: 75%;
 	position: absolute;
+	height: 9%;
 	left: 2rem;
 }
 

@@ -8,13 +8,18 @@ $color_3: #ff5c28;
     src: url("../Navigation/Files/euclid-circular-a-cufonfonts/Euclid\ Circular\ A\ Regular.ttf");
 }
 
+svg {
+	position: absolute;
+	top: 0;
+}
 
 .section__about {
 	width: 100%;
+	position: relative;
 	font-family: 'Euclid';
 	min-height: 70vh;
 	z-index: 99;
-	background: #48001e;
+	background: darkblue;
 	color: $color_2;
 }
 .container {

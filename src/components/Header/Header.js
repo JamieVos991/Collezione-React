@@ -1,21 +1,20 @@
 import "./Header.scss";
-import header__video from "./34.mp4"
+import Video from "./36.mp4";
+import 'animate.css';
 
 const Header = (props) => {
+    
     return (
         <header className="header__boven">
-            <img className="header__background" src="https://wallpaperaccess.com/full/4787936.jpg"></img>
+            <video loop={true} autoPlay={true} muted className="header__background">
+                 <source src={Video} type="video/mp4" />
+            </video>
             <div className="header__content">
-                <div className="header__h1--h2">
-                    <h1 className="header__h1">{props.header__h1}</h1>
-                    <p className="header__p">{props.header__p}</p>
-                </div>
+                <h1 className="header__h1 animate__animated animate__fadeInLeft"><span className="h1__style">We</span> are <span className="h1__style">Jordans</span></h1>
+                <h2 className="header__h2 animate__animated animate__fadeInLeft">Exclusive <span className="h1__style">Jordan</span> Shoes.</h2>
             </div>
         </header>
     );
 }
 
 export default Header;
-
-// https://images.hdqwalls.com/wallpapers/milesmorales-verse-nh.jpg
-// https://wallpaperaccess.com/full/4787936.jpg
