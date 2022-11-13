@@ -5,9 +5,10 @@ const Features = () => {
     return (
         <section className="section__features">
             <div className="container-about">
-                <Feature i="fa-solid fa-plane" p="Gratis verzending over de hele wereld, binnen 20 dagen."/>
-                <Feature i="fa-solid fa-lock" p="De SSL protocol zorgt voor beveiligde betalingen, zonder enige gevaarlijkheden."/>
-                <Feature i="fa-solid fa-people-arrows" p="We hebben 24/7 klanten support via instagram of contact pagina."/>
+                <Feature i="fa-solid fa-plane" p="Same day shipping"/>
+                <Feature i="fa-solid fa-lock" p="Fast delivery"/>
+                <Feature i="fa-solid fa-people-arrows" p="Quick customer service"/>
+                <Feature i="fa-solid fa-people-arrows" p="90 days retour"/>
             </div>
         </section>
     );

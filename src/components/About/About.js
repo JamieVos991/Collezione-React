@@ -1,6 +1,5 @@
 import "./About.scss";
 import about__pic from "./123.jpg"
-import "../../Helpers/Darkmode/Darkmode.scss";
 
 const About = (props) => {
 

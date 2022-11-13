@@ -2,7 +2,7 @@ import "./Header.scss";
 import Video from "./36.mp4";
 import 'animate.css';
 
-const Header = (props) => {
+const Header = () => {
     
     return (
         <header className="header__boven">

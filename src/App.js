@@ -8,6 +8,8 @@ const App = () => {
             <Homepage />
         </>
     );
+
+    
 }
 
 export default App;

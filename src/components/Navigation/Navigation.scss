@@ -7,18 +7,6 @@ $color_3: #ff5c28;
 	src: url("./Files/euclid-circular-a-cufonfonts/Euclid\ Circular\ A\ Regular.ttf");
 }
 
-svg {
-	position: relative;
-	top: 0;
-}
-
-.sticky {
-	position: fixed;
-	top: 0;
-	width: 100%;
-  }
-  
-
 .header__nav {
 	display: flex;
 	justify-content: center;
@@ -68,16 +56,12 @@ svg {
 	height: 3rem;
 	border-radius: 50%;
 	background: $color_3;
+	z-index: 99;
 	position: absolute;
 	top: 50%;
 	left: 45%;
 	transform: translate(30%, -50%);
 	transition-timing-function:cubic-bezier(0.445, 0.05, 0.55, 0.95);
-}
-
-
-label {
-	background: blue;
 }
 
 .nav__mode:checked::after {
@@ -90,13 +74,8 @@ label {
 
 nav a {
 	margin: 0 2rem;
+	color: $color_2;
 	text-decoration: none;
-}
-
-.nav__logo {
-	position: absolute;
-	height: 9%;
-	left: 2rem;
 }
 
 nav a:hover {
