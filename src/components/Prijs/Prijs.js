@@ -5,13 +5,14 @@ import { useState } from "react";
 const Prijs = (props) => {
 
     const showInfo = () => {
-        console.log("geklikt");
+        console.log("asd");
+        return 
     }
 
     const [searchTerm, setSearchTerm] = useState('')
     return (
         <>
-            <section className="section__searchfield">
+            <section id="3" className="section__searchfield">
                 <div className="box">
                     <i className="fa fa-search" aria-hidden="true"></i>
                     <input type="text" onChange={event => setSearchTerm(event.target.value)}/>

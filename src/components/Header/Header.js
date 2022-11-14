@@ -5,7 +5,7 @@ import 'animate.css';
 const Header = () => {
     
     return (
-        <header className="header__boven">
+        <header id="1" className="header__boven">
             <video loop={true} autoPlay={true} muted className="header__background">
                  <source src={Video} type="video/mp4" />
             </video>

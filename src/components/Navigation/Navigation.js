@@ -1,12 +1,14 @@
 import "./Navigation.scss";
 import { useRef } from "react";
 import React from "react";
+import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";   
+import useSticky from "./useSticky";
 
     
 const Navigation = (props) => {
 
-
+    const { sticky, stickyRef } = useSticky();
     const navRef = useRef();
 
     const showNavbar = () => {
@@ -19,12 +21,12 @@ const Navigation = (props) => {
             {/* <img className="nav__logo" src={props.navigation__logo} />  */}
             <nav className="text" ref={navRef}>
                 <a href='#1'>Home</a>
-                <a href="/#">Over ons</a>
-                <a href="/#">Prijs</a>
-                <a href="/#">Features</a>
-                <a href="/#">Contact</a>
+                <a href='#2'>Over ons</a>
+                <a href='#3'>Prijs</a>
+                <a href='#4'>Features</a>
+                <a href='#5'>Contact</a>
 
-                <button className="login__btn" href="/#">{props.navigation__login}</button>
+                <Link to="/Homepage2"><button className="login__btn">{props.navigation__login}</button></Link>
                 <div className="nav__btn nav__btn--close" onClick={showNavbar}>
                     <FaTimes />
                 </div>

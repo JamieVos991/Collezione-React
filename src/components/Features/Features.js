@@ -3,7 +3,7 @@ import Feature from "./Feature";
 
 const Features = () => {
     return (
-        <section className="section__features">
+        <section id="4" className="section__features">
             <div className="container-about">
                 <Feature i="fa-solid fa-plane" p="Same day shipping"/>
                 <Feature i="fa-solid fa-lock" p="Fast delivery"/>
