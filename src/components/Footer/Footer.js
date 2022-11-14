@@ -14,7 +14,16 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer__middle">
-          
+          <div className="footer__middle--container2">
+           
+          </div>
+          <div className="footer__middle--container">
+            <div className="language">
+              <div className="circle"></div>
+              <div className="circle2"></div>
+              <div className="circle3"></div>
+            </div>
+          </div>
         </div>
         <div className="footer__lower">
             <p>© All Rights Reserved Jamie Vos</p>

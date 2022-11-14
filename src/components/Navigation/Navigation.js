@@ -21,8 +21,8 @@ const Navigation = (props) => {
             {/* <img className="nav__logo" src={props.navigation__logo} />  */}
             <nav className="text" ref={navRef}>
                 <a href='#1'>Home</a>
-                <a href='#2'>Over ons</a>
-                <a href='#3'>Prijs</a>
+                <a href='#2'>About</a>
+                <a href='#3'>Collection</a>
                 <a href='#4'>Features</a>
                 <a href='#5'>Contact</a>
 

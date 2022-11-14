@@ -11,17 +11,53 @@ $color_3: #ff5c28;
 .section__about {
 	width: 100%;
 	font-family: 'Euclid';
-	min-height: 70vh;
-	z-index: 99;
-	background: $color_2;
+	height: 100vh;
 	color: $color_1;
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .container {
+	width: 100vw;
+	height: 35%;
+	background: $color_2;
+	padding: 5rem;
 	display: flex;
-	padding-top: 3rem;
+	justify-content: center;
+	text-align: center;
+	font-weight: 1000;
+	font-size: 200%;
+}
+
+.container__1 {
+	height: 10%;
+	width: 100vw;
+	display: flex;
+	color: $color_2;
+	align-items: center;
+	justify-content: space-evenly;
+	background: $color_1;
+}
+
+.about__p--1 {
+	font-size: 80%;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.about__p--2 {
+	font-size: 80%;
+	padding-top: 0.2rem;
+	text-transform:capitalize;
+}
+
+.container-text {
+	width: 100vw;
+	align-items: center;
+	height: 55%;
+	display: flex;
+	justify-content: space-evenly;
 }
 
 .about__h1 {
