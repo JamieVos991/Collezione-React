@@ -9,7 +9,7 @@ $color_3: #ff5c28;
 
 .header__nav {
 	display: flex;
-	justify-content: left;
+	justify-content: center;
 	height: 11rem;
 	position: sticky;
 	font-size: 1.7rem;
@@ -17,6 +17,7 @@ $color_3: #ff5c28;
 	color: $color_2;
 	background: $color_1;
 	width: 100%;
+	border-bottom: 2px solid $color_2;
 	z-index: 99;
 	padding: 0 3rem;
 }

@@ -11,7 +11,7 @@ $color_3: #ff5c28;
 .section__about {
 	width: 100%;
 	font-family: 'Euclid';
-	height: 100vh;
+	height: 80vh;
 	color: $color_1;
 	display: flex;
 	justify-content: center;
@@ -20,24 +20,30 @@ $color_3: #ff5c28;
 
 .container {
 	width: 100vw;
-	height: 35%;
-	background: $color_2;
-	padding: 5rem;
+	height: 90%;
+	align-items: center;
+	padding-bottom: 10rem;
+	background: $color_1;
 	display: flex;
 	justify-content: center;
 	text-align: center;
 	font-weight: 1000;
-	font-size: 200%;
+	font-size: 500%;
 }
 
 .container__1 {
+	font-family: 'Euclid';
 	height: 10%;
 	width: 100vw;
 	display: flex;
-	color: $color_2;
+	padding-top: 4rem;
+	font-weight: 1000;
+	color: $color_1;
 	align-items: center;
-	justify-content: space-evenly;
+	color: $color_2;
 	background: $color_1;
+	justify-content: space-evenly;
+
 }
 
 .about__p--1 {
@@ -54,15 +60,16 @@ $color_3: #ff5c28;
 
 .container-text {
 	width: 100vw;
-	align-items: center;
 	height: 55%;
 	display: flex;
 	justify-content: space-evenly;
+	padding-top: 5rem;
 }
 
 .about__h1 {
 	text-transform: uppercase;
 	font-family: 'EuclidBolder';
 	font-weight: 1000;
+	color: $color_2;
 	
 }
