@@ -23,7 +23,7 @@ $color_3: #ff5c28;
 	height: 90%;
 	align-items: center;
 	padding-bottom: 10rem;
-	background: $color_1;
+	background: $color_2;
 	display: flex;
 	justify-content: center;
 	text-align: center;
@@ -38,10 +38,10 @@ $color_3: #ff5c28;
 	display: flex;
 	padding-top: 4rem;
 	font-weight: 1000;
-	color: $color_1;
-	align-items: center;
 	color: $color_2;
-	background: $color_1;
+	align-items: center;
+	color: $color_1;
+	background: $color_2;
 	justify-content: space-evenly;
 
 }
@@ -70,6 +70,6 @@ $color_3: #ff5c28;
 	text-transform: uppercase;
 	font-family: 'EuclidBolder';
 	font-weight: 1000;
-	color: $color_2;
+	color: $color_1;
 	
 }

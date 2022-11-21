@@ -161,3 +161,10 @@ $color_3: #ff5c28;
     background-size: cover;
     background-position: center;
 }
+
+@media screen and (max-width: 520px) {
+    .footer__upper {
+        display: flex;
+        justify-content: center;;
+    }
+}
