@@ -53,18 +53,18 @@ $color_3: #ff5c28;
 }
 
 .footer__middle--container2 {
-
     height: 75%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-top: 10rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.footer__contactform {
-    height: 20%;
-    width: 20%;
-    background: white;
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 15%;
 }
 
 .footer__lower {

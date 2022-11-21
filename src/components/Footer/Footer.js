@@ -15,7 +15,9 @@ const Footer = () => {
         </div>
         <div className="footer__middle">
           <div className="footer__middle--container2">
-           
+           <div className="newsletter">
+
+           </div>
           </div>
           <div className="footer__middle--container">
             <div className="language">
