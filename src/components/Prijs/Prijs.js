@@ -5,8 +5,7 @@ import { useState } from "react";
 const Prijs = (props) => {
 
     const showInfo = () => {
-        console.log("asd");
-        return 
+        
     }
 
     const [searchTerm, setSearchTerm] = useState('')
@@ -26,7 +25,7 @@ const Prijs = (props) => {
                         return val
                     }
                 }).map((val, key) => {
-                    return <div key={key} className="product" onClick={showInfo} style={{backgroundImage: `url(${val.picture})`}} />
+                    return <div key={key} className="product product__info" onClick={showInfo} style={{backgroundImage: `url(${val.picture})`}} />
                 })}
             </section>
         </>

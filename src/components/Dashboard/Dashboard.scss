@@ -1,0 +1,57 @@
+$color_1: #48001e;
+$color_2: #ffccc2;
+$color_3: #ff5c28;
+
+.dashboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container__dashboard {
+    width: 90vw;
+    height: 90vh;
+    background: $color_1;
+    display: flex;
+}
+
+.left__side {
+    width: 25%;
+    height: 100%;
+    background: hsl(335, 100%, 10%);
+}
+
+.right__side {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 10;
+    gap: 1rem;
+}
+
+.container__upper {
+    height: 10%;
+    width: 100%;
+    background: hsl(335, 100%, 10%);
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 4rem;
+}
+
+.icons__db {
+    font-size: 4rem;
+    color: $color_2;
+}
+
+.product__info {
+    width: 20rem;
+    height: 20rem;
+    cursor: pointer;
+    background-color: $color_3;
+    background-position: center;
+    background-size:cover;
+}
