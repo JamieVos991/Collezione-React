@@ -13,20 +13,25 @@ $color_3: #ff5c28;
 	left: 0;
   }
 
-  
-.header__nav {
+  .header__nav {
 	display: flex;
-	justify-content: center;
+	align-items: center;
+	justify-content: center	;
 	height: 11rem;
 	position: sticky;
 	font-size: 1.7rem;
-	align-items: center;
 	color: $color_2;
 	background: $color_1;
 	width: 100%;
 	z-index: 99;
 	padding: 0 3rem;
 }
+
+  .nav__logo {
+	width: 4%;
+	position: absolute;
+	left: 2%;
+  }
 
 .login__btn {
 	background-color: $color_3;
@@ -82,6 +87,7 @@ nav a {
 	margin: 0 2rem;
 	color: $color_2;
 	text-decoration: none;
+	font-size: 0.6rem;
 }
 
 nav a:hover {
@@ -136,10 +142,6 @@ nav a:hover {
 		transform: translateY(-100vh);
 	}
 
-	nav a {
-		font-size: 1.5rem;
-	}
-
 	nav .nav__btn--close {
 		position: absolute;
 		top: 1.8rem;
@@ -149,4 +151,9 @@ nav a:hover {
 	.header__nav .responsive__nav {
 		transform: none;
 	}
+}
+
+.fa-circle-user {
+	position: absolute;
+	right: 2%;
 }

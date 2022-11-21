@@ -29,15 +29,25 @@ function Navigation (props) {
     return (
 
         <header className={`header__nav ${stickyClass}`} >
-            {/* <img className="nav__logo" src={props.navigation__logo} />  */}
+            <img className="nav__logo" src={props.navigation__logo} /> 
             <nav className="text" ref={navRef}>
-                <a href='#1'>Home</a>
-                <a href='#2'>About</a>
-                <a href='#3'>Collection</a>
-                <a href='#4'>Features</a>
-                <a href='#5'>Contact</a>
+                <a href='#1'>
+                    <i class="fa-solid fa-house"></i>
+                </a>
+                <a href='#2'>
+                    <i class="fa-solid fa-address-card"></i>
+                </a>
+                <a href='#3'>
+                    <i class="fa-solid fa-folder-open"></i>
+                </a>
+                <a href='#4'>
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </a>
+                <a href='#5'>
+                    <i class="fa-solid fa-address-book"></i>
+                </a>
 
-                <Link to="/Homepage2"><button className="login__btn">{props.navigation__login}</button></Link>
+                <Link to="/Homepage2"><i class="fa-solid fa-circle-user"></i></Link>
                 <div className="nav__btn nav__btn--close" onClick={showNavbar}>
                     <FaTimes />
                 </div>
