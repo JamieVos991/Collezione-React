@@ -47,7 +47,7 @@ function Navigation (props) {
                     <i class="fa-solid fa-address-book"></i>
                 </a>
 
-                <Link to="/Homepage2"><i class="fa-solid fa-circle-user"></i></Link>
+                <Link to="/Homepage2"><span className="login__btn"><i class="fa-solid fa-circle-user"></i></span></Link>
                 <div className="nav__btn nav__btn--close" onClick={showNavbar}>
                     <FaTimes />
                 </div>

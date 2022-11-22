@@ -73,7 +73,6 @@ $color_3: #ff5c28;
 }
 
 .product:hover {
-  backdrop-filter: blur(80px); // This be the blur
 }
 
 .product__image {
@@ -94,13 +93,14 @@ $color_3: #ff5c28;
 
 .modal {
   position: fixed;
-  width: 100vw;
-  height: 100vh;
   z-index: 1040;
-  background-color: white;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 3px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+  width: 30rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  outline: none;
 }
 
 .backdrop {
@@ -111,18 +111,16 @@ $color_3: #ff5c28;
   left: 0;
   right: 0;
   background-color: #000;
-  opacity: 0.5;
+  opacity: 0.9;
 }
 
 .modal-title {
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 2rem;
 }
 
 .modal-header {
-  border-bottom: 1px solid #e9ecef;
-  display: flex;
-  justify-content: space-between;
+
 }
 
 .modal-desc,
@@ -150,7 +148,6 @@ button {
 }
 
 .modal-footer {
-  border-top: 1px solid #e9ecef;
   display: flex;
   justify-content: flex-end;
   gap: 8px;
