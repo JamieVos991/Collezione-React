@@ -5,14 +5,8 @@ import Modal from "react-overlays/Modal";
 function PrijsCard(props) {
 
     const [showModal, setShowModal] = useState(false);
-
     const renderBackdrop = (props) => <div className="backdrop" {...props} />;
-
     var handleClose = () => setShowModal(false);
-  
-    var handleSuccess = () => {
-      console.log("success");
-    };
 
   return (
     <>
@@ -31,7 +25,7 @@ function PrijsCard(props) {
                 </div>
             </div>
             <div className="modal-desc">
-                <p>{props.subText}</p>
+                {/* <p>{props.subText}</p> */}
             </div>
             <div className="modal-footer">
             </div>

@@ -25,7 +25,7 @@ const Prijs = (props) => {
                <PrijsCard title="Jordan Orange" subText="a" backgroundImage="https://i.pinimg.com/originals/c1/f6/ad/c1f6adbdc36b8bc9e1ef1e7de5c96cf3.jpg"/>
                <PrijsCard title="Jordan Pink" subText="a" backgroundImage="https://sothebys-com.brightspotcdn.com/91/5b/726a96c5436f8343f6e706925ebe/032621-mfm-sneaker-029.jpg"/>
                <PrijsCard title="Jordan Yellow" subText="a" backgroundImage="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2022%2F10%2Fair-jordan-1-true-blue-DZ5485-410-photos-0.jpg?w=960&cbr=1&q=90&fit=max"/>
-               <PrijsCard title="Jordan Black" subText="a" backgroundImage="https://3q87le1gsko01ibim33e4wib-wpengine.netdna-ssl.com/wp-content/uploads/2020/04/https-hypebeast.com-image-2020-01-dior-air-jordan-1-low-high-first-look-1-1-1024x683.jpg"/>
+               <PrijsCard title="Jordan Black" subText="a" backgroundImage="https://www.slick-sneakers.com/wp-content/uploads/2021/12/Nike-Air-Jordan-1-Mid-Barcelona-Sweater-Red-Patent1-2.jpg"/>
                <PrijsCard title="Jordan White" subText="a" backgroundImage="https://images.lifestyleasia.com/wp-content/uploads/sites/7/2022/09/08135747/Untitled-design-3-3-1600x900.jpg"/>
                <PrijsCard title="Jordan Grey" subText="a" backgroundImage="https://sneakernews.com/wp-content/uploads/2017/09/jordan-32-creamsicle-okc-thunder.jpg"/>
                <PrijsCard title="Jordan Brown" subText="a" backgroundImage="https://i.pinimg.com/736x/e7/d2/58/e7d258a2294faca749f2dce9335aaf3c.jpg"/>
