@@ -73,3 +73,21 @@ $color_3: #ff5c28;
 	color: $color_1;
 	
 }
+
+@media screen and (max-width: 1200px) {
+	.about__h1 {
+		font-size: 100%;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.about__h1 {
+		font-size: 80%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.about__h1 {
+		font-size: 60%;
+	}
+}
