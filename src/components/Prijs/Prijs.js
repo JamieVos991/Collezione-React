@@ -1,5 +1,4 @@
 import "./Prijs.scss";
-import JSONDATA from '../../Data/DataShoes.json';
 import { useState } from "react";
 import PrijsCard from "./PrijsCard";
 
