@@ -1,25 +1,103 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
-import "./Dashboard.scss";
-import { useState } from 'react';
+// CSS
+import "./Dashboard.css";
 
-function Dashboard() {
-    const [searchTerm, setSearchTerm] = useState('')
+// Import React
+import React from "react";
 
-  return (
-    <section className="dashboard">
-    <div className="container__dashboard">
-        <div className="left__side">
+// Data 
+import ProductsObject from "../../Data/Products";
+import NavigationDataObject from "../../Data/NavigationData";
 
-        </div>
-        <div className="right__side">
-            <div className="container__upper">
-            <Link to="/"><i class="icons__db fa-solid fa-right-left"></i></Link>
-            </div>
-        </div>
-    </div>
-    </section>
-  )
+// Helper 
+import ChooseImage from "../../Helpers/ChooseImage";
+
+// Components
+import LeftPane from "../LeftPane/LeftPane";
+import RightPane from "../RightPane/RightPane";
+import Popup from "../Popup/Popup";
+
+
+class Dashboard extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            productCards: [],
+            open: true,
+            cardClicked: {},
+            editMode: false,
+        };
+    }
+
+    componentDidMount() {
+        this.setState({ productCards: ProductsObject.Products });
+    }
+
+    onButtonClicked = () => {
+        this.setState({ open: !this.state.open })
+    }
+
+    addButtonClicked = (inputFromPopup) => {
+        let imageFromHelper = ChooseImage(inputFromPopup);
+        let toBeAdded = [
+            {
+                id: this.state.productCards.length + 1,
+                name: inputFromPopup,
+                img: imageFromHelper
+            }
+        ]
+
+        let mergedArrays = this.state.productCards.concat(toBeAdded);
+        this.setState({
+            productCards: mergedArrays,
+            open: !this.state.open,
+        })
+    }
+
+    editButtonClicked = (inputFromPopup) => {
+        let productCards = this.state.productCards;
+        let newState = productCards.map(product => {
+            if(this.state.cardClicked.id === product.id){
+                product.name = inputFromPopup;
+                return product;
+            }
+            else{
+                return product;
+            }
+        });
+        this.setState({ productCards: newState, open: true});
+    }
+
+    onCardClicked = (idFromCard) => {
+        if (this.state.productCards[idFromCard - 1].name === "Placeholder") {
+            this.setState({
+                editMode: false,
+                open: !this.state.open,
+                cardClicked: this.state.productCards[idFromCard - 1],
+            });
+            return;
+        }
+        this.setState({
+            editMode: true,
+            open: !this.state.open,
+            cardClicked: this.state.productCards[idFromCard - 1],
+        });
+    }
+
+    render() {
+        if (this.state.open === true) {
+            return (
+                <article className="dashboard">
+                    <LeftPane navigationListItems={NavigationDataObject.NavigationData} buttonText="Go premium!" />
+                    <RightPane onProductCardClicked={this.onCardClicked} onButtonClicked={this.onButtonClicked} productCards={this.state.productCards} headerText="Mijn Pokemons" buttonSymbol="+" buttonText="Voeg hier je pokemon toe" />
+                </article>
+
+            );
+        }
+        return (
+            <Popup editButtonClicked={this.editButtonClicked} editMode={this.state.editMode} cardClicked={this.state.cardClicked} addButtonClicked={this.addButtonClicked} />
+        )
+    }
 }
 
-export default Dashboard
+export default Dashboard;

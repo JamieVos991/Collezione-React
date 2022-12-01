@@ -1,5 +1,4 @@
-const navigationListItems =
-[
+const NavigationData = [
     {
         name: "Home",
         message: 0,
@@ -24,4 +23,6 @@ const navigationListItems =
         name: "Contact",
         message: 2,
     },
-];
+]
+
+export default {NavigationData}
