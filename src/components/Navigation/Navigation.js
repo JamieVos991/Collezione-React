@@ -36,19 +36,19 @@ function Navigation (props) {
                     </a>
                     <a href='#2'>
                      
-                        <p>Home</p>
+                        <p>About us</p>
                     </a>
                     <a href='#3'>
                         
-                        <p>Home</p>
+                        <p>Shoes</p>
                     </a>
                     <a href='#4'>
                         
-                        <p>Home</p>
+                        <p>Features</p>
                     </a>
                     <a href='#5'>
                         
-                        <p>Home</p>
+                        <p>Contact</p>
                     </a>
 
                     <Link to="/Homepage2"><span className="login__btn"><i class="fa-solid fa-circle-user"></i></span></Link>

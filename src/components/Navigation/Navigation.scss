@@ -19,7 +19,7 @@ $color_3: #ff5c28;
 	justify-content: center	;
 	height: 11rem;
 	position: sticky;
-	font-size: 1.7rem;
+	font-size: 1.6rem;
 	color: $color_2;
 	background: $color_1;
 	width: 100%;
@@ -28,29 +28,29 @@ $color_3: #ff5c28;
 }
 
 .text {
-	background: blue;
+	background: hsl(335, 100%, 24%);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 85vw;
 	height: 8vh;
-	box-shadow: 1rem 0 1rem 0 olivedrab;
+	box-shadow: 0.7rem 0.7rem 0 0 hsl(335, 100%, 4%);
 	position: relative;
 }
 
   .nav__logo {
-	width: 7%;
+	width: 8%;
 	position: absolute;
-	left: 0%;
-	padding-left: 4rem;
+	left: 1%;
   }
 
 .login__btn {
 	position: absolute;
-	margin-top: -1.8rem;
 	right: 0;
-	padding-right: 4rem;
-	color: $color_3;
+	margin-top: -1.8rem;
+	padding-right: 3rem;
+	font-size: 0.6rem;
+	color: $color_2;
 }
 
 .nav__mode {
@@ -90,11 +90,10 @@ $color_3: #ff5c28;
 	font-size: 150%;
 }
 
-nav a {
+nav a {	
 	margin: 0 2rem;
 	color: $color_2;
 	text-decoration: none;
-	font-size: 0.6rem;
 }
 
 nav a:hover {

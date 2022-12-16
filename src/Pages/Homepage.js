@@ -5,6 +5,7 @@ import Features from "../components/Features/Features";
 import Prijs from "../components/Prijs/Prijs";
 import Footer from "../components/Footer/Footer"
 import React from "react";
+import logo from "../components/Navigation/Files/a.png";
 
 const HomePage = () => {
     return (
@@ -15,7 +16,7 @@ const HomePage = () => {
                 header__p="Dream It, Do It"
             />
 
-            <Navigation navigation__logo="https://th.bing.com/th/id/R.40f37c403f508f35bae5cdc87a4a99f3?rik=D5HoB6Z1Q49lvA&riu=http%3a%2f%2f4.bp.blogspot.com%2f_vTKkJKKFqJ8%2fTSMThw26gHI%2fAAAAAAAAANo%2fnk0COFnbLbg%2fs1600%2fjumpman5.png&ehk=FJPefndAzBNFfo8JBY73T8hGjeMuBuce0rRuYFbuz%2bc%3d&risl=&pid=ImgRaw&r=0" navigation__login="Login"/>
+            <Navigation navigation__logo={logo} navigation__login="Login"/>
         
             <About
                 about__h1="Who we are"
