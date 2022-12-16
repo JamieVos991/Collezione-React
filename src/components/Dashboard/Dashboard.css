@@ -1,9 +1,13 @@
 .dashboard {
-    width: 90%;
-    min-height: 90vh;
+    width: 100%;
+    min-height: 100vh;
     background: rgba(0, 0, 0, 0.6);
     display: grid;
     grid-template-columns: 30% 70%;
+}
+
+.section__dashboard {
+
 }
 
 @media screen and (max-width: 1000px){

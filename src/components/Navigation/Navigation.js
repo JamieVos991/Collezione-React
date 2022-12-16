@@ -29,28 +29,32 @@ function Navigation (props) {
     return (
 
         <header className={`header__nav ${stickyClass}`} >
-            <img className="nav__logo" src={props.navigation__logo} /> 
             <nav className="text" ref={navRef}>
-                <a href='#1'>
-                    <i class="fa-solid fa-house"></i>
-                </a>
-                <a href='#2'>
-                    <i class="fa-solid fa-address-card"></i>
-                </a>
-                <a href='#3'>
-                    <i class="fa-solid fa-folder-open"></i>
-                </a>
-                <a href='#4'>
-                    <i class="fa-solid fa-wand-magic-sparkles"></i>
-                </a>
-                <a href='#5'>
-                    <i class="fa-solid fa-address-book"></i>
-                </a>
+                <img className="nav__logo" src={props.navigation__logo} /> 
+                    <a href='#1'>
+                        <p>Home</p>
+                    </a>
+                    <a href='#2'>
+                     
+                        <p>Home</p>
+                    </a>
+                    <a href='#3'>
+                        
+                        <p>Home</p>
+                    </a>
+                    <a href='#4'>
+                        
+                        <p>Home</p>
+                    </a>
+                    <a href='#5'>
+                        
+                        <p>Home</p>
+                    </a>
 
-                <Link to="/Homepage2"><span className="login__btn"><i class="fa-solid fa-circle-user"></i></span></Link>
-                <div className="nav__btn nav__btn--close" onClick={showNavbar}>
-                    <FaTimes />
-                </div>
+                    <Link to="/Homepage2"><span className="login__btn"><i class="fa-solid fa-circle-user"></i></span></Link>
+                    <div className="nav__btn nav__btn--close" onClick={showNavbar}>
+                        <FaTimes />
+                    </div>
             </nav>
             <div className="nav__btn" onClick={showNavbar}>
                 <FaBars />
