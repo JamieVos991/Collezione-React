@@ -8,6 +8,9 @@ const About = (props) => {
             <div className="container">
                 <h1 className="about__h1">The one that <br></br>started it all</h1>
             </div>
+            <div className="container-2">
+                
+            </div>
         </section>
     );
 }
