@@ -3,16 +3,15 @@ $color_2: #ffccc2;
 $color_3: #ff5c28;
 
 .section__features{
-    background-color: $color_2;
     min-height: 200vh;
     width: 100vw;
-    color: $color_2;
 }
 
 .section__features--title {
     height: 40rem;
     width: 100vw;
-    background: red;
+    background: $color_1;
+    color: $color_2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,9 +21,9 @@ $color_3: #ff5c28;
 }
 
 .section__features--buttons {
-    height: 15rem;
+    height: 12rem;
     width: 100vw;
-    background: blue;
+    background: hsl(335, 100%, 24%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,16 +31,25 @@ $color_3: #ff5c28;
 }
 
 .section__features--button {
-    border: 2px solid red;
-    padding: 1rem 7rem;
-    color: white;
+    color: rgba(255, 204, 194, 0.8);
+    border: 2px solid rgba(255, 204, 194, 0.8);
+    padding: 1.3rem 6rem;
+    font-size: 80%;
     background: transparent;
+}
+
+.section__features--button-active {
+    color: rgba(255, 204, 194, 0.8);
+    border: 2px solid rgba(255, 204, 194, 0.8);
+    padding: 1.3rem 6rem;
+    font-size: 80%;
+    background: red;
 }
 
 .section__features--cards {
     width: 100vw;
     min-height: 60%;
-    background: green;
+    background: $color_1;
     display: grid;
     gap: 3rem;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -54,12 +62,19 @@ $color_3: #ff5c28;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-position: center;
+    background-size:cover;
 }
 
 .tall {
     grid-column: span 2 / auto;
 }
 
-.big {
-
+.section__features--more {
+    height: 8rem;
+    width: 100vw;
+    background: rgb(89, 42, 165);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

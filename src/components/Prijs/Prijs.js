@@ -10,12 +10,12 @@ const Prijs = (props) => {
 
     return (
         <>
-            <section id="3" className="section__searchfield">
+            {/* <section id="3" className="section__searchfield">
                 <div className="box">
                     <i className="fa fa-search" aria-hidden="true"></i>
                     <input type="text" onChange={event => setSearchTerm(event.target.value)}/>
                 </div>
-            </section>
+            </section> */}
             <section className="seciton__prijs">
                <PrijsCard title="Jordan Blue" subText="a" backgroundImage="https://static.sneakerjagers.com/news/nl/2022/08/air-jordan-1-low-dz376-469-9.jpeg"/>
                <PrijsCard title="Jordan Red"  subText="a" backgroundImage="https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/APSXLOGOIAI6ZN7OOTYJ3AT4UY.jpg&w=1440"/>

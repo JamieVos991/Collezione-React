@@ -24,8 +24,8 @@ const HomePage = () => {
                 about__pe="asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasddd"
                 about__p="ij je thuisbezorgd. Retourneren is gratis!, Op deze website koop je modisch comfortable schoenen voor het hele gezin die ook nog eens betaalbaar zijn. Je kunt terecht in 1 van onze 44 schoenenwinkels en natuurlijk kun je online schoenen bestellen. Bestellingen worden vanaf €49,- gratis bij je thuisbezorgd. Retourneren is gratis!"
             />
-            <Prijs />
             <Features />
+            <Prijs />
             <Footer />
         </>
     );
