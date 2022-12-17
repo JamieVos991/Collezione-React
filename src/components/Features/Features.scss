@@ -4,13 +4,13 @@ $color_3: #ff5c28;
 
 .section__features{
     background-color: $color_2;
-    height: 200vh;
+    min-height: 200vh;
     width: 100vw;
     color: $color_2;
 }
 
 .section__features--title {
-    height: 30%;
+    height: 40rem;
     width: 100vw;
     background: red;
     display: flex;
@@ -22,7 +22,7 @@ $color_3: #ff5c28;
 }
 
 .section__features--buttons {
-    height: 10%;
+    height: 15rem;
     width: 100vw;
     background: blue;
     display: flex;
@@ -39,7 +39,27 @@ $color_3: #ff5c28;
 }
 
 .section__features--cards {
-    height: 60%;
     width: 100vw;
+    min-height: 60%;
     background: green;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-auto-rows: 400px;
+    padding: 3rem;
+}
+
+.grid-item {
+    background: brown ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tall {
+    grid-column: span 2 / auto;
+}
+
+.big {
+
 }

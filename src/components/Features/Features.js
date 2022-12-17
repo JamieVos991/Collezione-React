@@ -16,7 +16,13 @@ const Features = () => {
                 <button className="section__features--button">5</button>
            </div>
            <div className="section__features--cards">
-                c
+                    <div class="grid-item">1</div>
+                    <div class="grid-item">2</div>
+                    <div class="grid-item">3</div>
+                    <div class="grid-item">4</div>
+                    <div class="grid-item tall">5</div>
+                    <div class="grid-item tall">6</div>
+                    <div class="grid-item">7</div>
            </div>
         </section>
     );
