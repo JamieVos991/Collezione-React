@@ -4,51 +4,42 @@ $color_3: #ff5c28;
 
 .section__features{
     background-color: $color_2;
-    min-height: 100vh;
+    height: 200vh;
     width: 100vw;
     color: $color_2;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
 }
 
-.about {
-    width: 30rem;
-    height: 45rem;
-    background: $color_1;
+.section__features--title {
+    height: 30%;
+    width: 100vw;
+    background: red;
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
+    text-align: center;
+    gap: 2rem;
 }
 
-// .about:nth-child(2) {
-//     width: 33rem;    
-//     height: 50rem;
-// }
-
-// .about:nth-child(3) {
-//     width: 33rem;    
-//     height: 50rem;
-// }
-
-.container-about {
+.section__features--buttons {
+    height: 10%;
+    width: 100vw;
+    background: blue;
     display: flex;
-    gap: 4rem;
     justify-content: center;
     align-items: center;
+    gap: 3rem;
 }
 
-i {
-    font-size: 600%;
+.section__features--button {
+    border: 2px solid red;
+    padding: 1rem 7rem;
+    color: white;
+    background: transparent;
 }
 
-
-@media screen and (max-width: 1200px) {
-    .container-about {
-        flex-wrap: wrap;
-    }
+.section__features--cards {
+    height: 60%;
+    width: 100vw;
+    background: green;
 }

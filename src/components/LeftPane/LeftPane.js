@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./LeftPane.css";
 
 
@@ -19,7 +20,7 @@ const LeftPane = ({navigationListItems, buttonText}) => {
                    {toBeRenderedNavigationListemItems}
                 </ul>
             </nav>
-            <button className="dashboard__button">{buttonText || "Klik hier"}</button>
+            <Link to="/"><button className="dashboard__button">{buttonText || "Klik hier"}</button></Link>
         </section>
     );
 }

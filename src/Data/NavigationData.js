@@ -1,27 +1,22 @@
 const NavigationData = [
     {
         name: "Home",
-        message: 0,
     },
 
     {
-        name: "Games",
-        message: 3,
+        name: "About us",
     },
 
     {
-        name: "Pokemons",
-        message: 0,
+        name: "Shoes",
     },
 
     {
-        name: "FAQ",
-        message: 1,
+        name: "Features",
     },
 
     {
         name: "Contact",
-        message: 2,
     },
 ]
 
