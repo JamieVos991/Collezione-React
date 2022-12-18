@@ -51,16 +51,6 @@ $color_3: #ff5c28;
 	color: $color_3;
 }
 
-.header__button {
-	background: transparent;
-	border: 0.1rem solid $color_2;
-	font-family: 'Euclid';
-	color: $color_2;
-	font-size: 90%;
-	font-weight: 600;
-	padding: 1.5rem 6rem;
-}
-
 .header__button:hover {
 	transition: 1s ease-in-out;
 	background: #4F95DA;
