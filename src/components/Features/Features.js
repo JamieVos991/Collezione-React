@@ -2,7 +2,7 @@ import "./Features.scss";
 import Feature from "./Feature";
 import { useState } from "react";
 
-const Features = () => {
+const Features = (props) => {
 
      const [items, setItems] = useState(Feature);
 
@@ -35,10 +35,10 @@ const Features = () => {
                <div className="section__features--cards">
                     {
                          items.map((elem) => {
-                              const { image } = elem;
+                              const { image, style } = elem;
 
                               return (
-                                   <div class="grid-item" style={{ backgroundImage: `url(${image})` }}></div>
+                                   <div class={style} style={{ backgroundImage: `url(${image})` }}></div>
                               )
                          })
                     }
