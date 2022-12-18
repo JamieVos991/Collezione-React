@@ -5,7 +5,6 @@ import { useEffect } from "react";
 
 const Features = () => {
 
-     const [className, setClassName] = useState("section__features--button");
      const [label, setLabel] = useState("All");
 
      return (
@@ -20,11 +19,11 @@ const Features = () => {
                     </div>
                </div>
                <div className="section__features--buttons">
-                    <button className={className}>{label}</button>
-                    <button className={className}>High</button>
-                    <button className={className}>Accessoires</button>
-                    <button className={className}>Mid</button>
-                    <button className={className}>Low</button>
+                    <button className="section__features--button features-green">{label}</button>
+                    <button className="section__features--button features-blue">High</button>
+                    <button className="section__features--button features-orange">Accessoires</button>
+                    <button className="section__features--button features-red">Mid</button>
+                    <button className="section__features--button features-white">Low</button>
                </div>
                <div className="section__features--cards">
                     <div class="grid-item" style={{ backgroundImage: `url(${"https://static.sneakerjagers.com/news/nl/2022/08/air-jordan-1-low-dz376-469-9.jpeg"})` }}></div>
