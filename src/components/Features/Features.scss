@@ -18,9 +18,9 @@ $color_3: #ff5c28;
 .features-container-1 {
     height: 100%;
     width: 50%;
-    background-image: url("https://th.bing.com/th/id/R.25de87e859524e21b26778dd76054936?rik=Och87pUJA3FQfg&riu=http%3a%2f%2fsneakerz.co%2fwp-content%2fuploads%2f2018%2f04%2filoveswoosh_27894035_972750626215172_1180018852709269504_n.jpg&ehk=S9PyHedSbmCSIgXq3k95xm0D5DjoGeo%2fWoWaoMlrvas%3d&risl=&pid=ImgRaw&r=0");
+    background-image: url("https://img.fril.jp/img/340262218/l/958821361.jpg?1593826540");
     background-position: center;
-    background-size: cover;
+    background-size: auto;
 }
 
 .features-container-2 {
@@ -47,10 +47,10 @@ $color_3: #ff5c28;
 
 .section__features--button {
     color: rgba(255, 204, 194, 0.8);
-    background: blue;;
     padding: 1.3rem 6rem;
     font-size: 80%;
     border: none;
+    cursor: pointer;
 }
 
 .section__features--cards {
@@ -80,7 +80,7 @@ $color_3: #ff5c28;
 .section__features--more {
     height: 8rem;
     width: 100vw;
-    background: rgb(89, 42, 165);
+    background: hsl(335, 100%, 24%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,5 +108,13 @@ $color_3: #ff5c28;
 
 .features-white {
     background: #E3371E;
+    color: whitesmoke;
+}
+
+.features__button {
+    padding: 1rem 6rem;
+    border-radius: 5rem;
+    border: 0.2rem solid whitesmoke;
+    background: transparent;
     color: whitesmoke;
 }
