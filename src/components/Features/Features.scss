@@ -35,29 +35,22 @@ $color_3: #ff5c28;
 }
 
 .section__features--buttons {
-    height: 12rem;
+    min-height: 12rem;
     width: 100vw;
     background: hsl(335, 100%, 24%);
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    flex-wrap: wrap;
+    padding: 2rem 0 2rem 0;
 }
 
 .section__features--button {
     color: rgba(255, 204, 194, 0.8);
-    border: 2px solid rgba(255, 204, 194, 0.8);
+    background: blue;;
     padding: 1.3rem 6rem;
     font-size: 80%;
-    background: transparent;
-}
-
-.section__features--button-active {
-    color: rgba(255, 204, 194, 0.8);
-    border: 2px solid rgba(255, 204, 194, 0.8);
-    padding: 1.3rem 6rem;
-    font-size: 80%;
-    background: red;
+    border: none;
 }
 
 .section__features--cards {
@@ -91,4 +84,29 @@ $color_3: #ff5c28;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.features-green {
+    background: #151F30;
+    color: whitesmoke;
+}
+
+.features-blue {
+    background: #103778;
+    color: whitesmoke;
+}
+
+.features-orange {
+    background: #0593A2;
+    color: whitesmoke;
+}
+
+.features-red {
+    background: #FF7A48;
+    color: $color_1;
+}
+
+.features-white {
+    background: #E3371E;
+    color: whitesmoke;
 }
