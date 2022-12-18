@@ -22,7 +22,7 @@ const Features = (props) => {
                     </div>
                     <div className="features-container-2">
                          <h1>Shoes</h1>
-                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur commodi quod <br></br>molestiae omnis adipisci? Consequuntur eum reiciendis perferendis</p>
+                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur commodi quod molestiae omnis adipisci? Consequuntur eum reiciendis perferendis</p>
                     </div>
                </div>
                <div className="section__features--buttons">
