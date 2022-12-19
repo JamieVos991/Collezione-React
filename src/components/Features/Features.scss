@@ -2,6 +2,11 @@ $color_1: #48001e;
 $color_2: #ffccc2;
 $color_3: #ff5c28;
 
+@font-face {
+	font-family: 'Euclid';
+	src: url("../Navigation/Files/euclid-circular-a-cufonfonts/Euclid\ Circular\ A\ Regular.ttf");
+}
+
 .section__features{
     min-height: 200vh;
     width: 100vw;
@@ -52,6 +57,7 @@ $color_3: #ff5c28;
     font-size: 80%;
     border: none;
     cursor: pointer;
+    font-family: 'Euclid';
 }
 
 .section__features--cards {
@@ -118,4 +124,5 @@ $color_3: #ff5c28;
     border: 0.2rem solid whitesmoke;
     background: transparent;
     color: whitesmoke;
+    font-family: 'Euclid';
 }
