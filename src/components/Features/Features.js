@@ -7,8 +7,8 @@ const Features = (props) => {
      const [items, setItems] = useState(Feature);
 
      const filterItem = (categItem) => {
-          const updatedItems = Feature.filter((curElem) => {
-               return curElem.category === categItem;
+          const updatedItems = Feature.filter((filterShoes) => {
+               return filterShoes.category === categItem;
           });
 
           setItems(updatedItems);
@@ -34,8 +34,8 @@ const Features = (props) => {
                </div>
                <div className="section__features--cards">
                     {
-                         items.map((elem) => {
-                              const { image, style } = elem;
+                         items.map((shoesElem) => {
+                              const { image, style } = shoesElem;
 
                               return (
                                    <div class={style} style={{ backgroundImage: `url(${image})` }}></div>
