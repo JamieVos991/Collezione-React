@@ -14,10 +14,14 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer__middle">
+          <div className="footer__middle--container1">
+            <h1>About us</h1>
+          </div>
           <div className="footer__middle--container2">
-           <div className="newsletter">
-
-           </div>
+            <h1>Join us</h1>
+          </div>
+          <div className="footer__middle--container3">
+            <h1>Contact us</h1>
           </div>
           <div className="footer__middle--container">
             <div className="language">
