@@ -1,4 +1,4 @@
-import "./RightPane.css";
+import "./RightPane.scss";
 import ProductCard from "../ProductCard/ProductCard";
 import Placeholder from "../Placeholder/Placeholder";
 
@@ -11,7 +11,7 @@ const RightPane = ({ buttonSymbol, buttonText, productCards, onButtonClicked, on
         if(product.name === "Placeholder"){
            return <Placeholder id={product.id} key={product.id} onCardClicked={onCardClicked} buttonSymbol="+" buttonText="Voeg product toe" />
         }
-        return <ProductCard onCardClicked={onCardClicked} key={product.id} id={product.id} name={product.name} productImg={product.img} />
+        return <ProductCard onCardClicked={onCardClicked} key={product.id} id={product.id} name={product.name} context={product.context} productImg={product.img} />
       
     });
 

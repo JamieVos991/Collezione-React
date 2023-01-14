@@ -1,4 +1,3 @@
-import "./ProductCard.css";
 
 const ProductCard = (props) => {
 
@@ -8,8 +7,19 @@ const ProductCard = (props) => {
 
     return (
         <li onClick={ProductCardClicked} className="productsList__item productsList__item--gray">
-            <img className="productsList_img" src={props.productImg} alt={props.name}></img>
-            <p className="productsList__imageText">{props.name}</p>
+            <div className="productContainer__img">
+                <img className="productsList_img" src={props.productImg} alt={props.name}></img>
+            </div>
+            <div className="productContainer__p">
+                <p className="productsList__imageContext">{props.context}</p>
+
+            </div>
+            
+            <div className="productContainer__filters">
+                <p className="productsList__imageText">{props.name}</p>
+                <p className="productsList__imageText">Price</p>
+                <p className="productsList__imageText">Category</p>
+            </div>
         </li>
     );
 }

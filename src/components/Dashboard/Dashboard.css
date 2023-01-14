@@ -1,9 +1,8 @@
 .dashboard {
     width: 100%;
     min-height: 100vh;
-    background: rgba(0, 0, 0, 0.6);
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 35% 65%;
 }
 
 .section__dashboard {
