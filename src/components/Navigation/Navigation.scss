@@ -21,7 +21,7 @@ $color_3: #ff5c28;
 	position: sticky;
 	font-size: 1.6rem;
 	color: $color_2;
-	background: $color_1;
+	background: hsl(335, 100%, 12%);
 	width: 100%;
 	z-index: 99;
 	padding: 0 3rem;
@@ -47,10 +47,26 @@ $color_3: #ff5c28;
 .login__btn {
 	position: absolute;
 	right: 0;
-	margin-top: -1.8rem;
-	padding-right: 3rem;
 	font-size: 3rem;
 	color: $color_2;
+}
+
+.logout__btn {
+	position: absolute;
+	right: 15rem;
+}
+
+.darkmode__btn {
+	position: absolute;
+	right: 7rem;
+	font-size: 2rem;
+	color: $color_2;
+}
+
+.lightmode__btn {
+	position: absolute;
+	font-size: 2rem;
+	right: 10rem;
 }
 
 .nav__mode {

@@ -2,124 +2,219 @@ $color_1: #48001e;
 $color_2: #ffccc2;
 $color_3: #ff5c28;
 
-.seciton__prijs {
-    width: 100vw;
-    min-height: 100vh;
-    background: $color_2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 6rem;
-    flex-wrap: wrap;
-    z-index: 10;
-    gap: 1rem;
+.prijs__section {
+  width: 100vw;
+  min-height: 100vh;
+  background: $color_2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
 }
 
-
-.seciton__prijs ul {
-  background: $color_3;
-  padding: 50px 0;
+.prijs__container--right {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  height: 30%;
+  background: blue;
+  padding: 5rem 0 0 2rem;
 }
 
-.seciton__prijs ul li {
-  list-style-type: none;
-  position: relative;
-  width: 6px;
-  margin: 0 auto;
-  padding-top: 50px;
-  background: $color_3;
+.prijs__container--right-middle {
+  width: 100%;
+  height: 15%;
+  background: red;
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 2rem;
+  font-size: 1.6rem;
 }
 
-.seciton__prijs ul li::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: inherit;
-  z-index: 1;
+.prijs__vinkjes--right {
+  width: 100%;
+  height: 25%;
+  gap: 1rem;
+  background: green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0 0 2rem;
 }
 
-.seciton__prijs ul li div {
-  position: relative;
-  bottom: 0;
-  width: 400px;
-  padding: 15px;
-  background: $color_1;
-  color: $color_2;
-}
-
-.seciton__prijs ul li div::before {
-  content: "";
-  position: absolute;
-  bottom: 7px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-}
-
-.seciton__prijs ul li:nth-child(odd) div {
-  left: 45px;
-}
-
-.seciton__prijs ul li:nth-child(odd) div::before {
-  left: -15px;
-  border-width: 8px 16px 8px 0;
-  border-color: transparent $color_1 transparent transparent;
-}
-
-.seciton__prijs ul li:nth-child(even) div {
-  left: -439px;
-}
-
-.seciton__prijs ul li:nth-child(even) div::before {
-  right: -15px;
-  border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent $color_1;
-}
-
-time {
-  display: block;
-  font-size: 1.2rem;
+.prijs__right--p {
+  font-size: 1.7rem;
   font-weight: bold;
-  margin-bottom: 8px;
+
 }
 
-.seciton__prijs ul li:nth-child(odd) div {
-  transform: translate3d(40px, 0, 0);
+.prijs__right--p-span {
+  font-weight: 100;
 }
 
-.seciton__prijs ul li:nth-child(even) div {
-  transform: translate3d(-40px, 0, 0);
-}
 
-@media screen and (max-width: 900px) {
-  .seciton__prijs ul li div {
-    width: 250px;
-  }
-  .seciton__prijs ul li:nth-child(even) div {
-    left: -289px;
-    /*250+45-6*/
+@media screen and (min-width: 1300px) {
+  .prijs__section.left {
+    min-height: 100vh;
   }
 }
 
-@media screen and (max-width: 600px) {
-  .seciton__prijs ul li {
-    margin-left: 20px;
+@media screen and (max-width: 1300px) {
+  .prijs__section {
+    flex-direction: column;
   }
-  .seciton__prijs ul li div {
-    width: calc(100vw - 91px);
+
+  .prijs__section--left {
+    width: 100%;
+    height: 60vh;
   }
-  .seciton__prijs ul li:nth-child(even) div {
-    left: 45px;
-  }
-  .seciton__prijs ul li:nth-child(even) div::before {
-    left: -15px;
-    border-width: 8px 16px 8px 0;
-    border-color: transparent $color_1 transparent transparent;
+
+  .prijs__section--right {
+    width: 100%;
   }
 }
 
+.article__top {
+  background: #edf0f7;
+  height: 3rem;
+  width: 100%;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.article__topper {
+  background: black;
+  height: 3rem;
+  width: 100%;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+.article__middle {
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
+  gap: 2rem;
+  z-index: -19;
+}
+
+.prijs__korting {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
+  gap: 2rem;
+}
+
+.prijs__vinkjes {
+  height: 11rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+.prijs__p {
+  font-size: 1.5rem;
+}
+
+.prijs__p--oranje {
+  font-size: 2.5rem;
+  color: $color_3;
+}
+
+.prijs__vinkjes--p {
+  font-size: 1.6rem;
+}
+
+.prijs__span {
+  font-weight: bold;
+}
+
+.prijs__span--doorstreept {
+  text-decoration: line-through;
+}
+
+.prijs__h1 {
+  font-size: 2.5rem;
+}
+
+.prijs__margin {
+  padding-right: 1.3rem;
+}
+
+.prijs__button--korting {
+  font-size: 1.2rem;
+  width: 19rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  background: #b9e6ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prijs__button-section {
+  width: 100%;
+  height: 27%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -999;
+}
+
+.prijs__button {
+  width: 30rem;
+  height: 5rem;
+  border-radius: 4rem;
+  border: none;
+  background: $color_3;
+  cursor: pointer;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+#article1 {
+  width: 37rem;
+  height: 60rem;
+  background: white;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  outline: 0.4rem solid black;
+}
+
+#article2 {
+  width: 37rem;
+  height: 60rem;
+  background: white;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  outline: 0.4rem solid black;
+}
+
+#article3 {
+  width: 37rem;
+  height: 60rem;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  outline: 0.4rem solid black;
+}
+
+.active {
+  transform: scale(1.02);
+}

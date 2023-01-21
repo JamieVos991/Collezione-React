@@ -10,18 +10,23 @@ $color_3: #ff5c28;
     position: relative;
 }
 
+.dashboard__form--info {
+    width: 100%;
+    padding: 2rem;
+}
+
 .dashboard__form {
     width: 35rem;
     height: 50rem;
-    background: hsl(0, 59%, 31%);
+    background: $color_2;
     box-shadow: 1.5rem 1.5rem 0rem 0.5rem black;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 5rem;
-    position: relative;
     margin-top: 10rem;
+    word-wrap: break-word;
 }
 
 .buttons__section {

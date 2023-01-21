@@ -1,0 +1,31 @@
+[
+    {
+        "name": "Home",
+        "id": 1,
+        "click": "#1"
+    },
+
+    {
+        "name": "About us",
+        "id": 2,
+        "click": "#2"
+    },
+
+    {
+        "name": "Product backlog",
+        "id": 3,
+        "click": "#3"
+    },
+
+    {
+        "name": "Price",
+        "id": 4,
+        "click": "#4"
+    },
+
+    {
+        "name": "Contact",
+        "id": 5,
+        "click": "#5"
+    }
+]

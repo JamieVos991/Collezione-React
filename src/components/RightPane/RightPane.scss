@@ -3,14 +3,11 @@ $color_2: #ffccc2;
 $color_3: #ff5c28;
 
 .productsWrapper {
-    padding-bottom: 4rem;
     background: $color_2;
-}
-
-.header {
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding-bottom: 4rem;
+    padding-top: 2rem;
 }
 
 
@@ -20,6 +17,7 @@ $color_3: #ff5c28;
     display: flex;
     gap: 3rem;
     flex-wrap: wrap;
+    padding-bottom: 2rem;
 }
 
 .products__logo {
@@ -55,6 +53,7 @@ $color_3: #ff5c28;
     flex-direction: column;
     color: $color_2;
     gap: 1rem;
+    word-wrap: break-word;
 }
 
 .productContainer__filters {

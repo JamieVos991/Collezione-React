@@ -1,4 +1,3 @@
-
 const ProductCard = (props) => {
 
     const ProductCardClicked = () => {
@@ -17,7 +16,7 @@ const ProductCard = (props) => {
             
             <div className="productContainer__filters">
                 <p className="productsList__imageText">{props.name}</p>
-                <p className="productsList__imageText">Price</p>
+                <p className="productsList__imageText">{props.price}</p>
                 <p className="productsList__imageText">Category</p>
             </div>
         </li>

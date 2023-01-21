@@ -1,7 +1,12 @@
+// Import styling files
+import "./App.scss";
+
+// Import Routers
+import { Route, Routes } from "react-router-dom";
+
+// Import components
 import Homepage from "./Pages/Homepage";
 import Homepage2 from "./Pages/Homepage2";
-import "./App.scss";
-import { Route, Routes } from "react-router-dom";
 import Login from "./Pages/Login";
 
 const App = () => {

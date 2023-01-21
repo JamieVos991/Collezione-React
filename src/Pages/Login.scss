@@ -1,0 +1,50 @@
+$color_1: #48001e;
+$color_2: #ffccc2;
+$color_3: #ff5c28;
+
+.login__sections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login__form {
+    width: 38rem;
+    height: 55rem;
+    background: $color_1;
+}
+
+.login__button {
+    width: 32rem;
+    height: 5rem;
+    outline: none;
+    background: $color_3;
+    border-radius: 10rem;
+}
+
+.login__section {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.login__input {
+    width: 32rem;
+    height: 5rem;
+    padding: 1rem;
+}
+
+.loginsocial__section {
+    height: 40%;
+    width: 100%;
+}
+
+.loginvergeten__section {
+    height: 30%;
+    width: 100%;
+}

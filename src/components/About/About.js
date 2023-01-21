@@ -1,10 +1,15 @@
+// Import styling files
 import "./About.scss";
-import about__pic from "./123.jpg"
+import "../Darkmode/Darkmode.scss";
 
-const About = (props) => {
+// Import Redux components
+import { connect } from 'react-redux';
+import { toggleDarkMode, toggleLightMode } from '../../Helpers/actions';
+
+const About = ({ isDarkMode, toggleDarkMode, toggleLightMode }) => {
 
     return (
-        <section id="2" className="section__about">
+        <section id="2" className={`section__about ${isDarkMode ? "dark" : "light"}`}>
             <div className="container">
                 <h1 className="about__h1">The one that <br></br>started it all</h1>
          
@@ -16,4 +21,13 @@ const About = (props) => {
     );
 }
 
-export default About;
+const mapStateToProps = (state) => ({
+    isDarkMode: state.isDarkMode,
+});
+
+const mapDispatchToProps = (dispatch) => ({
+    toggleDarkMode: () => dispatch(toggleDarkMode()),
+    toggleLightMode: () => dispatch(toggleLightMode()),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(About);

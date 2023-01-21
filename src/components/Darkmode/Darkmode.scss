@@ -1,0 +1,64 @@
+$color_1: #48001e;
+$color_2: #ffccc2;
+$color_3: #ff5c28;
+
+.section__darkmode.dark {
+    background: $color_1;
+    color: $color_2;
+}
+
+.section__darkmode.light {
+    background: $color_2;
+    color: $color_1;
+}
+
+.section__about.dark {
+    background: $color_1;
+    color: $color_2;
+}
+
+.section__about.light {
+    background: $color_2;
+    color: $color_1;
+}
+
+.section__features.dark {
+    background: hsl(335, 100%, 20%);
+    color: $color_2;
+}
+
+.section__features.light {
+    background: $color_2;
+    color: $color_1;
+}
+
+.section__darkmode {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.section__darkmode--left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../Img/Jordan2.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.section__darkmode--right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__darkmode--button {
+    width: 20rem;
+    height: 20rem;
+    background: red;
+}

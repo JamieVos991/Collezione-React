@@ -8,121 +8,19 @@ $color_3: #ff5c28;
 }
 
 .section__features{
-    min-height: 200vh;
+    min-height: 100vh;
     width: 100vw;
-}
-
-.section__features--title {
-    height: 60rem;
-    width: 100vw;
-    background: $color_1;
-    color: $color_2;
     display: flex;
-}
-
-.features-container-1 {
-    height: 100%;
-    width: 50%;
-    background-image: url("https://img.fril.jp/img/340262218/l/958821361.jpg?1593826540");
-    background-position: center;
-    background-size: auto;
-}
-
-.features-container-2 {
-    height: 100%;
-    width: 50%;
-    display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    text-align: center;
-    padding: 0 12rem 0 12rem;
-    gap: 2rem;
 }
 
-.section__features--buttons {
-    min-height: 12rem;
-    width: 100vw;
-    background: hsl(335, 100%, 24%);
+.form__features {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 2rem 0 2rem 0;
+    flex-direction: column;
 }
 
-.section__features--button {
-    color: rgba(255, 204, 194, 0.8);
-    padding: 1.3rem 6rem;
-    font-size: 80%;
-    border: none;
-    cursor: pointer;
-    font-family: 'Euclid';
-}
-
-.section__features--cards {
-    width: 100vw;
-    min-height: 60%;
-    background: $color_1;
-    display: grid;
-    gap: 3rem;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-auto-rows: 400px;
-    padding: 3rem;
-}
-
-.grid-item {
-    background: brown ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-position: center;
-    background-size:cover;
-}
-
-.tall {
-    grid-column: span 2 / auto;
-}
-
-.section__features--more {
-    height: 8rem;
-    width: 100vw;
-    background: hsl(335, 100%, 24%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.features-green {
-    background: #151F30;
-    color: whitesmoke;
-}
-
-.features-blue {
-    background: #103778;
-    color: whitesmoke;
-}
-
-.features-orange {
-    background: #0593A2;
-    color: whitesmoke;
-}
-
-.features-red {
-    background: #FF7A48;
-    color: $color_1;
-}
-
-.features-white {
-    background: #E3371E;
-    color: whitesmoke;
-}
-
-.features__button {
-    padding: 1rem 6rem;
-    border-radius: 5rem;
-    border: 0.2rem solid whitesmoke;
-    background: transparent;
-    color: whitesmoke;
-    font-family: 'Euclid';
+.h1__features {
+    font-size: 400%;
 }
