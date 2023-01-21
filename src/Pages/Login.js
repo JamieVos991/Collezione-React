@@ -18,7 +18,7 @@ function Login({ setIfLogin }) {
     if (username === '1' && password === '1') {
       localStorage.setItem("isLoggedIn", true);
       setIfLogin(true);
-      navigate('/Homepage2');
+      navigate('/Collezione');
     } else {
       alert('Invalid username or password');
     }
@@ -27,7 +27,7 @@ function Login({ setIfLogin }) {
   function checkIfLoggedIn() {
     if (localStorage.getItem("isLoggedIn") === "true") {
       setIfLogin(true);
-      navigate('/Homepage2');
+      navigate('/Collezione');
     }
   }
 

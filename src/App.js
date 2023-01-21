@@ -6,7 +6,7 @@ import { Route, Routes } from "react-router-dom";
 
 // Import components
 import Homepage from "./Pages/Homepage";
-import Homepage2 from "./Pages/Homepage2";
+import Collezione from "./Pages/Collezione";
 import Login from "./Pages/Login";
 
 const App = () => {
@@ -16,7 +16,7 @@ const App = () => {
             <Routes>
                 <Route path="/" element={<Homepage />}></Route>
                 <Route path="/Login" element={<Login />}></Route>
-                <Route path="/Homepage2" element={<Homepage2 />}></Route>
+                <Route path="/Collezione" element={<Collezione />}></Route>
             </Routes>
         </>
     );

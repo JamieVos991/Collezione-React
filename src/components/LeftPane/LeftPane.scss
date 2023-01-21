@@ -72,3 +72,18 @@ $color_3: #ff5c28;
     width: 2rem;
     height: 2rem;
 }
+
+.popup {
+    background: white;
+    width: 60rem;
+    height: 50rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}

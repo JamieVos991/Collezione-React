@@ -16,6 +16,16 @@ const LeftPane = (props) => {
     const [editMode, setEditMode] = useState(false);
     const [cardInfo, setCardInfo] = useState(true);
 
+    const [showPopup, setShowPopup] = useState(false);
+
+    const handleClick = () => {
+        setShowPopup(true);
+    };
+
+    const handleClose = () => {
+        setShowPopup(false);
+    };
+
     const inputEventName = (event) => {
         setInputName(event.target.value);
     }
@@ -30,11 +40,11 @@ const LeftPane = (props) => {
 
     const editProduct = () => {
         if (
-                editMode == true & 
-                inputName > "" & 
-                inputContext > "" & 
-                inputPrice > "" 
-            ) {
+            editMode == true &
+            inputName > "" &
+            inputContext > "" &
+            inputPrice > ""
+        ) {
             props.editButtonClicked(inputName, inputContext, inputPrice);
             setEditMode(false);
             setCardInfo(true);
@@ -64,6 +74,9 @@ const LeftPane = (props) => {
         <>
             <section className="dashboard__wrapper">
                 <div className="buttons__section">
+
+                    <button onClick={handleClick}>Show Popup</button>
+
                     <Link to="/"><button>Go back</button></Link>
                     <button onClick={onFilterClick1} className="filter__1">
                         filter#1
@@ -97,6 +110,13 @@ const LeftPane = (props) => {
 
                 </div>
             </section>
+
+            {showPopup && (
+                <div className="popup">
+                    <div>Current URL: {window.location.href}</div>
+                    <button onClick={handleClose}>Close</button>
+                </div>
+            )}
         </>
     );
 }
