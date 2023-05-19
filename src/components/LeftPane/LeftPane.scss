@@ -2,7 +2,7 @@ $color_1: #48001e;
 $color_2: #ffccc2;
 $color_3: #ff5c28;
 
-.dashboard__wrapper {
+.leftpane__wrapper {
     background: $color_1;
     display: flex;
     justify-content: center;
@@ -10,22 +10,8 @@ $color_3: #ff5c28;
     position: relative;
 }
 
-.dashboard__form {
-    width: 35rem;
-    height: 50rem;
-    background: hsl(0, 59%, 31%);
-    box-shadow: 1.5rem 1.5rem 0rem 0.5rem black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 5rem;
-    position: relative;
-    margin-top: 10rem;
-}
-
-.buttons__section {
-    background: blue;
+.leftpane__header {
+    background: hsl(335, 100%, 24%);
     top: 0;
     width: 100%;
     height: 10rem;
@@ -33,37 +19,148 @@ $color_3: #ff5c28;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 4rem;
+    gap: 3rem;
 }
 
-.edit__popup {
-    position: absolute;
-    right: 2.5rem;
-    top: 2.5rem;
-    background-color: #4CAF50; /* Green */
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
+.leftpane__button {
+    background-color: $color_1;
+    border: 1px solid transparent;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    color: $color_2;
+    font-family: inherit;
     cursor: pointer;
-    font-size: 16px;
-    margin-left: 10px;
-    box-shadow: 0 5px #666;
-    transition: transform 0.1s;
+    font-size: 1.3rem;
+    height: 3.5rem;
+    width: 11rem;
+    transition: 0.3s;
 }
 
-.edit__popup:hover {
-    transform: translateY(4px);
-    box-shadow: 0 2px #666;
+.leftpane__button:hover,
+.leftpane__button:focus {
+    background-color: $color_2;
+    color: $color_1;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
 }
 
-.pokeball_middle {
-    z-index: 99;
+.leftpane__form {
+    width: 38rem;
+    height: 55rem;
+    background: $color_2;
+    box-shadow: 1.5rem 1.5rem 0rem 0.5rem black;
+    margin-top: 10rem;
+    word-wrap: break-word;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
-.pokeball_button {
-    background: #eee;
-    z-index: 10;
-    width: 2rem;
-    height: 2rem;
+.leftpane__form-user {
+    width: 100%;
+    background: hsl(335, 100%, 24%);
+    height: 18%;
+    color: $color_2;
+    font-size: 1.7rem;
+    display: flex;
+    padding-left: 2rem;
+    align-items: center;
+    gap: 2rem;
+}
+
+.leftpane__form-me {
+    height: 60%;
+    border-radius: 50%;
+}
+
+.leftpnae__form-bold {
+    font-weight: bold;
+}
+
+.leftpane__form--backgroundImage {
+    height: 40%;
+    width: 100%;
+}
+
+.leftpane__form-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.leftpane__form-context {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    padding: 2rem 2rem 0 2rem;
+    word-break: break-all;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.leftpane__form-name {
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.leftpane__form-info {
+    font-size: 1.8rem;
+}
+
+.leftpane__form-catergory {
+    height: 12%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background: hsl(335, 100%, 24%);
+    color: $color_2;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.leftpane__section-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    gap: 2rem;
+}
+
+.leftpane__input {
+    height: 4rem;
+    width: 80%;
+    padding: 1rem;
+    border: none;
+}
+
+.leftpane__section-share {
+    background: rgba(0, 0, 0, 0.8);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    z-index: 999;
+}
+
+.leftpane__figure {
+    background: #7a0033;
+    height: 40rem;
+    width: 43rem;
+    color: $color_2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    padding-top: 5rem;
 }

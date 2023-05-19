@@ -1,53 +1,58 @@
-import "./Features.scss";
-import Feature from "./Feature";
 import { useState } from "react";
+import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import "../Display/Display.css";
+import Products, { Products as ProductsArray } from "../../Data/Products";
 
-const Features = (props) => {
+const Display = (props) => {
+  const [selectedProduct, setSelectedProduct] = useState(null);
+  const filteredGames = useSelector((state) => state.filteredGames);
+  const navigate = useNavigate();
 
-     const [items, setItems] = useState(Feature);
+  const handleProductSelect = (event) => {
+    const productId = parseInt(event.target.value);
+    const selectedProduct = ProductsArray.find((product) => product.id === productId);
+    setSelectedProduct(selectedProduct);
+  };
 
-     const filterItem = (categItem) => {
-          const updatedItems = Feature.filter((filterShoes) => {
-               return filterShoes.category === categItem;
-          });
+  const handleProductClick = () => {
+    if (localStorage.getItem("isLoggedIn") === "true") {
+      navigate("/Collezione");
+    } else {
+      navigate("/Login");
+    }
+  };
 
-          setItems(updatedItems);
-     }
+  const titlesToBeRendered = filteredGames && filteredGames.map((product, index) => {
+    return (
+      <section key={index} className="display" onClick={handleProductClick}>
+        <h2>{product.name}</h2>
+      </section>
+    );
+  });
 
-     return (
-          <section id="4" className="section__features">
-               <div className="section__features--title">
-                    <div className="features-container-1">
+  return (
+    <section className="display__section">
+      <select onChange={handleProductSelect}>
+        <option value="">Select a product</option>
+        {ProductsArray.map((product) => (
+          <option key={product.id} value={product.id}>
+            {product.name}
+          </option>
+        ))}
+      </select>
+      {selectedProduct && (
+        <div>
+          <h2>{selectedProduct.name}</h2>
+          <img src={selectedProduct.img} alt={selectedProduct.name} />
+          <p>{selectedProduct.context}</p>
+          <p>{selectedProduct.price}</p>
+          <p>{selectedProduct.category}</p>
+        </div>
+      )}
+      {titlesToBeRendered}
+    </section>
+  );
+};
 
-                    </div>
-                    <div className="features-container-2">
-                         <h1>Shoes</h1>
-                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur commodi quod molestiae omnis adipisci? Consequuntur eum reiciendis perferendis</p>
-                    </div>
-               </div>
-               <div className="section__features--buttons">
-                    <button onClick={() => setItems(Feature)} className="section__features--button features-green">All</button>
-                    <button onClick={() => filterItem('High')} className="section__features--button features-blue">High</button>
-                    <button onClick={() => filterItem('Accessoires')} className="section__features--button features-orange">Accessoires</button>
-                    <button onClick={() => filterItem('Mid')} className="section__features--button features-red">Mid</button>
-                    <button onClick={() => filterItem('Low')} className="section__features--button features-white">Low</button>
-               </div>
-               <div className="section__features--cards">
-                    {
-                         items.map((shoesElem) => {
-                              const { image, style } = shoesElem;
-
-                              return (
-                                   <div class={style} style={{ backgroundImage: `url(${image})` }}></div>
-                              )
-                         })
-                    }
-               </div>
-               <div className="section__features--more">
-                    <button className="features__button">Show more</button>
-               </div>
-          </section>
-     );
-}
-
-export default Features;
+export default Display;

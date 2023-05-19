@@ -1,3 +1,4 @@
+import "./ProductCard.scss";
 
 const ProductCard = (props) => {
 
@@ -6,19 +7,18 @@ const ProductCard = (props) => {
     }
 
     return (
-        <li onClick={ProductCardClicked} className="productsList__item productsList__item--gray">
-            <div className="productContainer__img">
-                <img className="productsList_img" src={props.productImg} alt={props.name}></img>
+        <li className="productcard" onClick={ProductCardClicked}>
+            <div className="productcard__container-img">
+                <img className="productcard__img" src={props.productImg} alt={props.name}></img>
             </div>
-            <div className="productContainer__p">
-                <p className="productsList__imageContext">{props.context}</p>
-
+            <div className="productcard__container-p">
+                <p className="productcard__context">{props.context}</p>
             </div>
             
-            <div className="productContainer__filters">
-                <p className="productsList__imageText">{props.name}</p>
-                <p className="productsList__imageText">Price</p>
-                <p className="productsList__imageText">Category</p>
+            <div className="productcard__container-filters">
+                <p className="productcard__name">{props.name}</p>
+                <p className="productcard__name">{props.price}</p>
+                <p className="productcard__name">{props.category}</p>
             </div>
         </li>
     );

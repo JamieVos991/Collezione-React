@@ -21,7 +21,7 @@ $color_3: #ff5c28;
 	position: sticky;
 	font-size: 1.6rem;
 	color: $color_2;
-	background: $color_1;
+	background: hsl(335, 100%, 12%);
 	width: 100%;
 	z-index: 99;
 	padding: 0 3rem;
@@ -39,18 +39,60 @@ $color_3: #ff5c28;
 }
 
   .nav__logo {
-	width: 8%;
+	width: 6%;
 	position: absolute;
-	left: 1%;
+	left: 8%;
+	z-index: 99;
   }
 
 .login__btn {
 	position: absolute;
 	right: 0;
-	margin-top: -1.8rem;
-	padding-right: 3rem;
 	font-size: 3rem;
 	color: $color_2;
+}
+
+.logout__btn {
+	position: absolute;
+	right: 15rem;
+}
+
+.logout__btn {
+  background-color: $color_2;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  color: $color_1;
+  font-family: inherit;
+  cursor: pointer;
+  font-size: 1.3rem;
+  height: 2.5rem;
+  width: 8rem;
+  transition: 0.4s;
+}
+
+.logout__btn:hover,
+.logout__btn:focus {
+  background-color: $color_1;
+  color: $color_2;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.logout__btn:hover {
+  transform: translateY(-1px);
+}
+
+.darkmode__btn {
+	position: absolute;
+	right: 7rem;
+	font-size: 2rem;
+	color: $color_2;
+}
+
+.lightmode__btn {
+	position: absolute;
+	font-size: 2rem;
+	right: 10rem;
 }
 
 .nav__mode {
@@ -121,14 +163,21 @@ nav a:hover {
 		padding: 0 0 4.7rem 2em;
 		right: 2rem;
 	}	
+	
+	
+	.nav__logo {
+		width: 15%;
+		position: absolute;
+		left: 8%;
+		z-index: 99;
+	  }
 
 	.nav__mode {
 		display: none;
 	}
 
-	.login__btn {
+	.login__btn, .darkmode__btn, .lightmode__btn, .logout__btn{
 		position: initial;
-		font-size: 0.9rem;
 	}
 
 	.header__nav nav {

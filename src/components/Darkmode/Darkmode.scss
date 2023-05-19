@@ -1,0 +1,87 @@
+$color_1: #48001e;
+$color_2: #ffccc2;
+$color_3: #ff5c28;
+
+.section__darkmode.dark {
+    background: $color_1;
+    color: $color_2;
+}
+
+.section__darkmode.light {
+    background: $color_2;
+    color: $color_1;
+}
+
+.section__about.dark {
+    background: $color_1;
+    color: $color_2;
+}
+
+.section__about.light {
+    background: $color_2;
+    color: $color_1;
+}
+
+.section__features.dark {
+    background: hsl(335, 100%, 20%);
+    color: $color_2;
+}
+
+.section__features.light {
+    background: hsl(10, 100%, 85%);
+    color: $color_1;
+}
+
+.prijs__section.light {
+    background: hsl(10, 100%, 85%);
+}
+
+.prijs__section.dark {
+    background: hsl(335, 100%, 20%);
+} 
+
+.section__darkmode {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1250px) {
+    .section__darkmode {
+        flex-direction: column;
+        height: 100rem;
+    }
+}
+
+.section__darkmode--left {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../Img/Jordan2.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.section__darkmode--right {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section__darkmode--right--p {
+    position: absolute;
+    padding: 5rem;
+}
+
+.section__darkmode--button {
+    width: 20rem;
+    height: 20rem;
+    background: red;
+}
