@@ -8,7 +8,7 @@ import Video from "./36.mp4";
 const Header = () => {
     
     return (
-        <header id="1" className="header__boven">
+        <header id="Home" className="header__boven">
             <video loop={true} autoPlay={true} muted className="header__background">
                  <source src={Video} type="video/mp4" />
             </video>

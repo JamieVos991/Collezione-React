@@ -2,30 +2,30 @@
     {
         "name": "Home",
         "id": 1,
-        "click": "#1"
+        "click": "/#Home"
     },
 
     {
         "name": "About us",
         "id": 2,
-        "click": "#2"
+        "click": "/#About"
     },
 
     {
         "name": "Product backlog",
         "id": 3,
-        "click": "#3"
+        "click": "/Products"
     },
 
     {
         "name": "Price",
         "id": 4,
-        "click": "#4"
+        "click": "/#Price"
     },
 
     {
         "name": "Contact",
         "id": 5,
-        "click": "#5"
+        "click": "/#Contact"
     }
 ]

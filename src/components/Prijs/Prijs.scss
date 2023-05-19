@@ -11,6 +11,7 @@ $color_3: #ff5c28;
   align-items: center;
   gap: 4rem;
   flex-wrap: wrap;
+  padding: 2rem 0 2rem 0;
 }
 
 .prijs__container--right {
@@ -19,25 +20,26 @@ $color_3: #ff5c28;
   gap: 2rem;
   width: 100%;
   height: 30%;
-  background: blue;
   padding: 5rem 0 0 2rem;
 }
 
 .prijs__container--right-middle {
   width: 100%;
-  height: 15%;
-  background: red;
+  height: 10%;
   display: flex;
   align-items: center;
   padding: 0 0 0 2rem;
   font-size: 1.6rem;
 }
 
+.prijs__button-section {
+  
+}
+
 .prijs__vinkjes--right {
   width: 100%;
   height: 25%;
   gap: 1rem;
-  background: green;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -3,27 +3,25 @@ import "./RightPane.scss";
 
 // Import components
 import ProductCard from "../ProductCard/ProductCard";
-import Placeholder from "../Placeholder/Placeholder";
 
-const RightPane = ({ buttonSymbol, buttonText, productCards, onButtonClicked, onProductCardClicked}) => {
-    let onCardClicked = (idFromCard) =>{
+const RightPane = ({ handleFilter, productCards, onProductCardClicked }) => {
+    let onCardClicked = (idFromCard) => {
         onProductCardClicked(idFromCard);
     }
 
     let productCardsToBeRendered = productCards.map(product => {
-        if(product.name === "Placeholder"){
-           return <Placeholder id={product.id} key={product.id} onCardClicked={onCardClicked} />
-        }
-        return <ProductCard onCardClicked={onCardClicked} key={product.id} id={product.id} name={product.name} context={product.context} price={product.price} productImg={product.img} />
-      
+        return <ProductCard onCardClicked={onCardClicked} key={product.id} id={product.id} name={product.name} category={product.category} context={product.context} price={product.price} productImg={product.img} />
     });
 
     return (
-        <section className="productsWrapper">
-            <header className="header">
-               
+        <section className="rightpane__wrapper">
+            <header className="rightpane__header">
+                <button className="rightpane__button" onClick={() => handleFilter("all")}>All</button>
+                <button className="rightpane__button" onClick={() => handleFilter("price")}>Filter Price</button>
+                <button className="rightpane__button" onClick={() => handleFilter("name")}>Filter Name</button>
             </header>
-            <ul className="productsList">
+
+            <ul className="rightpane__list">
                 {productCardsToBeRendered}
             </ul>
         </section>

@@ -1,37 +1,58 @@
-// Import React
 import { useState } from "react";
+import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import "../Display/Display.css";
+import Products, { Products as ProductsArray } from "../../Data/Products";
 
-// Import styling files 
-import "./Features.scss";
-import "../Darkmode/Darkmode.scss";
+const Display = (props) => {
+  const [selectedProduct, setSelectedProduct] = useState(null);
+  const filteredGames = useSelector((state) => state.filteredGames);
+  const navigate = useNavigate();
 
-// Import Redux components
-import { connect } from 'react-redux';
-import { toggleDarkMode, toggleLightMode } from '../../Helpers/actions';
+  const handleProductSelect = (event) => {
+    const productId = parseInt(event.target.value);
+    const selectedProduct = ProductsArray.find((product) => product.id === productId);
+    setSelectedProduct(selectedProduct);
+  };
 
-const Features = ({isDarkMode}) => {
+  const handleProductClick = () => {
+    if (localStorage.getItem("isLoggedIn") === "true") {
+      navigate("/Collezione");
+    } else {
+      navigate("/Login");
+    }
+  };
 
-     return (
-          <section id="3" className={`section__features ${isDarkMode ? "dark" : "light"}`}>
-               <h1 className="h1__features">Product backlog</h1>
-               <form className="form__features">
-                    <input type="text" />
-                    <input type="text" />
-                    <button>asd</button>
-               </form>
-          </section>
-     );
-}
+  const titlesToBeRendered = filteredGames && filteredGames.map((product, index) => {
+    return (
+      <section key={index} className="display" onClick={handleProductClick}>
+        <h2>{product.name}</h2>
+      </section>
+    );
+  });
 
-const mapStateToProps = (state) => ({
-     isDarkMode: state.isDarkMode,
- });
- 
- const mapDispatchToProps = (dispatch) => ({
-     toggleDarkMode: () => dispatch(toggleDarkMode()),
-     toggleLightMode: () => dispatch(toggleLightMode()),
- });
- 
- export default connect(mapStateToProps, mapDispatchToProps)(Features);
- 
+  return (
+    <section className="display__section">
+      <select onChange={handleProductSelect}>
+        <option value="">Select a product</option>
+        {ProductsArray.map((product) => (
+          <option key={product.id} value={product.id}>
+            {product.name}
+          </option>
+        ))}
+      </select>
+      {selectedProduct && (
+        <div>
+          <h2>{selectedProduct.name}</h2>
+          <img src={selectedProduct.img} alt={selectedProduct.name} />
+          <p>{selectedProduct.context}</p>
+          <p>{selectedProduct.price}</p>
+          <p>{selectedProduct.category}</p>
+        </div>
+      )}
+      {titlesToBeRendered}
+    </section>
+  );
+};
 
+export default Display;

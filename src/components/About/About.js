@@ -9,7 +9,7 @@ import { toggleDarkMode, toggleLightMode } from '../../Helpers/actions';
 const About = ({ isDarkMode, toggleDarkMode, toggleLightMode }) => {
 
     return (
-        <section id="2" className={`section__about ${isDarkMode ? "dark" : "light"}`}>
+        <section id="About" className={`section__about ${isDarkMode ? "dark" : "light"}`}>
             <div className="container">
                 <h1 className="about__h1">The one that <br></br>started it all</h1>
          

@@ -15,7 +15,7 @@ function Darkmode({ isDarkMode }) {
                 
             </div>
             <div className='section__darkmode--right'>
-               
+                <p className='section__darkmode--right--p'>Welcome to our shoe website! We are a dedicated team of fashion enthusiasts who have a passion for providing the latest and greatest in shoe fashion. With a wide variety of styles and brands to choose from, we have something for everyone.</p>
             </div>
         </section>
     );

@@ -1,7 +1,9 @@
-import { TOGGLE_DARK_MODE, TOGGLE_LIGHT_MODE } from './actions';
+import { TOGGLE_DARK_MODE, TOGGLE_LIGHT_MODE, SET_CARD_CLICKED } from './actions';
 
 const initialState = {
     isDarkMode: false,
+    filteredGames: [],
+    cardClicked: {}
 };
 
 export default function themeReducer(state = initialState, action) {
@@ -22,7 +24,16 @@ export default function themeReducer(state = initialState, action) {
                 ...state,
                 ifLogin: action.payload
             };
-            
+        case "FILTEREDGAMES":
+            return {
+                ...state,
+                filteredGames: action.payload
+            };
+        case SET_CARD_CLICKED:
+            return {
+                ...state,
+                cardClicked: action.card
+            };
         default:
             return state;
     }

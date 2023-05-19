@@ -2,101 +2,52 @@ $color_1: #48001e;
 $color_2: #ffccc2;
 $color_3: #ff5c28;
 
-.productsWrapper {
+.rightpane__wrapper {
     background: $color_2;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 2rem;
+    padding-top: 12rem;
+    position: relative;
 }
 
+.rightpane__header {
+    width: 100%;
+    height: 10rem;
+    background: hsl(335, 100%, 24%);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
 
-.productsList {
+.rightpane__button {
+    background-color: $color_1;
+    border: 1px solid transparent;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    color: $color_2;
+    font-family: inherit;
+    cursor: pointer;
+    font-size: 1.3rem;
+    height: 3.5rem;
+    width: 11rem;
+    transition: 0.3s;
+}
+
+.rightpane__button:hover,
+.rightpane__button:focus {
+    background-color: $color_2;
+    color: $color_1;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.rightpane__list {
     list-style: none;
     justify-content: center;
     display: flex;
     gap: 3rem;
     flex-wrap: wrap;
     padding-bottom: 2rem;
-}
-
-.products__logo {
-    width: 10%;
-}
-
-.productsList__item {
-    width: 29rem;
-    height: 35rem;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-    background: rgb(95, 23, 23);
-    transition: 0.2s;
-}
-
-.productContainer__img {
-    width: 100%;
-    height: 50%;
-    background: rgb(73, 112, 73);
-}
-
-.productsList_img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.productContainer__p {
-    width: 100%;
-    height: 30%;
-    background: $color_1;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    color: $color_2;
-    gap: 1rem;
-    word-wrap: break-word;
-}
-
-.productContainer__filters {
-    width: 100%;
-    height: 20%;
-    background: $color_1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-}
-
-.productsList__item:hover {
-    transform: scale(1.03);
-}
-
-.productsList__button {
-    width: 8rem;
-    height: 8rem;
-    color: #212121;
-    border-radius: 50%;
-    font-size: 150%;
-    border: none;
-    outline: none;
-    background-color: #eee;
-}
- 
-.productsList__text {
-    font-size: 80%;
-}
-
-.productsList__imageText {
-    font-size: 1.5rem;
-    color: $color_2;
-}
-
-.productsList__imageContext {
-    font-size: 1.4rem;
-}
-
-@media screen and (max-width: 1000px){
-    .header {
-        display: flex;
-        justify-content: center;
-    }
 }

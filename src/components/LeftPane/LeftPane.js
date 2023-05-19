@@ -1,125 +1,147 @@
-// Import React 
-import { useEffect, useState } from "react";
+// Import React
+import { useState } from "react";
 
-// Import styling files 
+// Import styling files
 import "./LeftPane.scss";
+import Me from "../../Img/Me.jpg";
 
 // Import Routers
 import { Link } from "react-router-dom";
 
 const LeftPane = (props) => {
-
     const [inputName, setInputName] = useState("");
     const [inputContext, setInputContext] = useState("");
     const [inputPrice, setInputPrice] = useState("");
 
-    const [editMode, setEditMode] = useState(false);
-    const [cardInfo, setCardInfo] = useState(true);
+  const [editMode, setEditMode] = useState(false);
+  const [cardInfo, setCardInfo] = useState(true);
+  const [showPopup, setShowPopup] = useState(false);
 
-    const [showPopup, setShowPopup] = useState(false);
+  const handleClick = () => setShowPopup(true);
+  const handleClose = () => setShowPopup(false);
 
-    const handleClick = () => {
-        setShowPopup(true);
-    };
+  const inputEventName = (event) => setInputName(event.target.value);
+  const inputEventContext = (event) => setInputContext(event.target.value);
+  const inputEventPrice = (event) => setInputPrice(event.target.value);
 
-    const handleClose = () => {
-        setShowPopup(false);
-    };
-
-    const inputEventName = (event) => {
-        setInputName(event.target.value);
+  const editProduct = () => {
+    if (editMode && inputName !== "" && inputContext !== "" && inputPrice !== "") {
+      props.editButtonClicked(inputName, inputContext, inputPrice);
+      setEditMode(false);
+      setCardInfo(true);
+      setInputName("");
+      setInputContext("");
+      setInputPrice("");
     }
+  };
 
-    const inputEventContext = (event) => {
-        setInputContext(event.target.value);
-    }
+  const editButtonClicked = () => {
+    setEditMode(!editMode);
+    setCardInfo(!cardInfo);
+    setInputName(props.cardClicked.name);
+    setInputContext(props.cardClicked.context);
+    setInputPrice(props.cardClicked.price);
+  };
 
-    const inputEventPrice = (event) => {
-        setInputPrice(event.target.value);
-    }
+  const copyToClipboard = () => {
+    const url = window.location.href;
+    navigator.clipboard.writeText(url);
+  };
 
-    const editProduct = () => {
-        if (
-            editMode == true &
-            inputName > "" &
-            inputContext > "" &
-            inputPrice > ""
-        ) {
-            props.editButtonClicked(inputName, inputContext, inputPrice);
-            setEditMode(false);
-            setCardInfo(true);
-            setInputName("");
-            setInputContext("");
-            setInputPrice("");
-        }
-    }
+  return (
+    <>
+      <section className="leftpane__wrapper">
+        <header className="leftpane__header">
+          <Link to="/">
+            <button className="leftpane__button">Go back</button>
+          </Link>
 
-    const editButtonClicked = () => {
-        setEditMode(!editMode)
-        setCardInfo(!cardInfo)
-        setInputName(props.cardClicked.name);
-        setInputContext(props.cardClicked.context);
-        setInputPrice(props.cardClicked.price);
-    }
+          <button className="leftpane__button" onClick={handleClick}>
+            Share
+          </button>
 
-    const onFilterClick1 = () => {
-        console.log("filter1");
-    }
+          {!editMode && (
+            <button className="leftpane__button" onClick={editButtonClicked}>
+              Edit
+            </button>
+          )}
+        </header>
+        <article className="leftpane__form">
+          {cardInfo ? (
+            <>
+              <div className="leftpane__form-user">
+                <img className="leftpane__form-me" src={Me} alt="User"></img>
+                <p>
+                  Uploaded by <span className="leftpnae__form-bold">Jamie</span>
+                </p>
+              </div>
+              <div className="leftpane__form--backgroundImage">
+                <img className="leftpane__form-img" src={props.cardClicked.img} alt="Product"></img>
+              </div>
+              <div className="leftpane__form-context">
+                <p className="leftpane__form-name">{props.cardClicked.name}</p>
+                <p className="leftpane__form-info">{props.cardClicked.context}</p>
+              </div>
+              <div className="leftpane__form-catergory">
+                <p>{props.cardClicked.price}</p>
+                <p>{props.cardClicked.category}</p>
+              </div>
+            </>
+          ) : null}
 
-    const onFilterClick2 = () => {
-        console.log("filter2");
-    }
+                    {editMode && (
+                        <section className="leftpane__section-input">
+                            <input
+                                maxLength="10"
+                                onChange={inputEventName}
+                                type="text"
+                                placeholder={props.cardClicked.name}
+                                value={inputName}
+                                className="leftpane__input"
+                                id="name"
+                            ></input>
+                            <input
+                                maxLength="80"
+                                onChange={inputEventContext}
+                                type="text"
+                                placeholder={props.cardClicked.context}
+                                value={inputContext}
+                                className="leftpane__input"
+                                id="context"
+                            ></input>
+                            <input
+                                maxLength="4"
+                                onChange={inputEventPrice}
+                                type="text"
+                                placeholder={props.cardClicked.price}
+                                value={inputPrice}
+                                className="leftpane__input"
+                                id="price"
+                            ></input>
+                            <button className="leftpane__button" onClick={editProduct}>Done</button>
+                        </section>
+                    )}
 
-    return (
-        <>
-            <section className="dashboard__wrapper">
-                <div className="buttons__section">
-
-                    <button onClick={handleClick}>Show Popup</button>
-
-                    <Link to="/"><button>Go back</button></Link>
-                    <button onClick={onFilterClick1} className="filter__1">
-                        filter#1
-                    </button>
-                    <button onClick={onFilterClick2} className="filter__2">
-                        filter#2
-                    </button>
-                </div>
-                <div className="dashboard__form">
-
-                    {cardInfo &&
-                        <>
-                            <p>{props.cardClicked.name}</p>
-                            <p className="dashboard__form--info">{props.cardClicked.context}</p>
-                            <p>{props.cardClicked.price}</p>
-                        </>
-                    }
-
-                    {editMode &&
-                        <>
-                            <input maxlength="10" onChange={inputEventName} type="text" placeholder={props.cardClicked.name} value={inputName} className="popup_input" id="name" ></input>
-                            <input maxlength="80" onChange={inputEventContext} type="text" placeholder={props.cardClicked.context} value={inputContext} className="popup_input" id="context" ></input>
-                            <input maxlength="4" onChange={inputEventPrice} type="text" placeholder={props.cardClicked.price} value={inputPrice} className="popup_input" id="price" ></input>
-                            <div className="pokeball_middle">
-                                <button onClick={() => { editProduct(); }} className="pokeball_button"></button>
-                            </div>
-                        </>
-                    }
-
-                    {editMode || <button onClick={editButtonClicked} className="edit__popup">Edit</button>}
-
-                </div>
+                </article>
             </section>
 
             {showPopup && (
-                <div className="popup">
-                    <div>Current URL: {window.location.href}</div>
-                    <button onClick={handleClose}>Close</button>
-                </div>
-            )}
-        </>
-    );
-}
-
+        <section className="leftpane__section-share">
+          <figure className="leftpane__figure">
+            <div>Current URL: {window.location.href}</div>
+            <div className="buttons">
+              <button className="leftpane__button" onClick={handleClose}>
+                Close
+              </button>
+              <button className="leftpane__button" onClick={copyToClipboard}>
+                Copy
+              </button>
+            </div>
+          </figure>
+        </section>
+      )}
+    </>
+  );
+};
 
 export default LeftPane;

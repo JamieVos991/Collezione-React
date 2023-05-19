@@ -4,35 +4,46 @@ import React, { useState, useEffect } from "react";
 // Import styling files 
 import "./Dashboard.css";
 
+// Import Routers
+import { useNavigate } from "react-router-dom/dist";
+
+// Import Redux
+import { useSelector } from "react-redux";
+
 // Import Data
 import ProductsObject from "../../Data/Products";
 
 // Import components
 import RightPane from "../RightPane/RightPane";
-import Popup from "../LeftPane/LeftPane";
+import LeftPane from "../LeftPane/LeftPane";
 
 const Dashboard = () => {
-
     const [productCards, setProductCards] = useState([]);
     const [cardClicked, setCardClicked] = useState({});
     const [editMode, setEditMode] = useState(false);
+    const [filter, setFilter] = useState("");
+    
+    const navigate = useNavigate();
 
     useEffect(() => {
-        console.log(productCards);
-        // Check for data in local storage
         let storedProductCards = JSON.parse(localStorage.getItem('productCards'));
         if (storedProductCards) {
             setProductCards(storedProductCards);
+            setCardClicked(storedProductCards[0]);
         } else {
+            // localStorage.setItem('productCards', JSON.stringify(ProductsObject.Products));
             setProductCards(ProductsObject.Products);
-            localStorage.setItem('productCards', JSON.stringify(ProductsObject.Products));
+            setCardClicked(ProductsObject.Products[0]);
         }
-        setCardClicked(ProductsObject.Products[0])
-    }, [])
-      
 
+        if (localStorage.getItem("isLoggedIn") === "true") {
+            return;
+          } else {
+            navigate('/Login');
+          }
+    }, [])
+    
     const editButtonClicked = (inputFromPopup, inputFromPopup2, inputFromPopup3) => {
-        setProductCards(productCards);
         let newState = productCards.map(product => {
             if (cardClicked.id === product.id) {
                 product.name = inputFromPopup;
@@ -53,11 +64,32 @@ const Dashboard = () => {
         setCardClicked(productCards[idFromCard - 1]);
     }
 
+    const handleFilter = (filterOption) => {
+        setFilter(filterOption);
+    }
+
+    let filteredProducts = productCards;
+    switch (filter) {
+        case "price":
+            filteredProducts = productCards.filter(card => parseFloat(card.price) < 100);
+            break;
+        case "name":
+            filteredProducts = productCards.filter(card => card.category === "High");
+            console.log(productCards);
+            break;
+        case "all":
+            filteredProducts = productCards;
+            break;
+        default:
+            filteredProducts = productCards;
+    }
+
+
     return (
         <section className="section__dashboard">
             <article className="dashboard">
-                <Popup editButtonClicked={editButtonClicked} editMode={editMode} cardClicked={cardClicked} />
-                <RightPane onProductCardClicked={onCardClicked} productCards={productCards} />
+                <LeftPane editButtonClicked={editButtonClicked} editMode={editMode} cardClicked={cardClicked} />
+                <RightPane onProductCardClicked={onCardClicked} productCards={filteredProducts} filter={filter} handleFilter={handleFilter}/>
             </article>
         </section>
     );

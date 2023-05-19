@@ -35,7 +35,7 @@ $color_3: #ff5c28;
 	align-items:flex-start;
 	flex-direction: column;
 	gap: 3rem;
-	padding: 8rem;
+	padding: 5rem;
 }
 
 .header__h1 {
@@ -88,5 +88,11 @@ svg {
 @media only screen and (max-width: 500px) {
 	.header__h1 {
 		font-size: 4rem;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.header__content {
+		padding: 2rem;
 	}
 }

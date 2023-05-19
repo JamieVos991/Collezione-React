@@ -6,18 +6,18 @@ import Jordan5 from "../Img/Jordan5.jpg";
 import Jordan6 from "../Img/Jordan6.jpg";
 
 
-const Products = [
+export const Products = [
     {
         id: 1,
-        name: "Jordan 1",
+        name: "Chicago",
         img: Jordan1,
         context: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo quos aspernatur ",
-        price: "280$",
-        category: "High",
+        price: "20$",
+        category: "Mid"
     },
     {
         id: 2,
-        name: "Jordan 2",
+        name: "Shadow",
         img: Jordan2,
         context: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo quos aspernatur ",
         price: "300$",
@@ -25,35 +25,35 @@ const Products = [
     },
     {
         id: 3,
-        name: "Jordan 3",
+        name: "Turbo Green",
         img: Jordan3,
         context: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo quos aspernatur ",
         price: "120$",
-        category: "Low",
+        category: "High"
     },
     {
         id: 4,
-        name: "Jordan 4",
+        name: "Air Force",
         img: Jordan4,
         context: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo quos aspernatur ",
         price: "250$",
-        category: "High",
+        category: "Low"
     },
     {
         id: 5,
-        name: "Jordan 5",
+        name: "Black Toe",
         img: Jordan5,
         context: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo quos aspernatur ",
         price: "300$",
-        category: "Low",
+        category: "Mid"
     },
     {
         id: 6,
-        name: "Jordan 6",
+        name: "Royal",
         img: Jordan6,
         context: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo quos aspernatur ",
-        price: "240$",
-        category: "Low",
+        price: "24$",
+        category: "Low"
     },
 ]
 

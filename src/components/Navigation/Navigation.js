@@ -60,13 +60,13 @@ function Navigation({ isDarkMode, toggleDarkMode, toggleLightMode, isLoggedIn, s
     return (
 
         <header className={`header__nav ${stickyClass} ${isDarkMode}`} >
+            <img className="nav__logo" src={NavigationLogo} />
             <nav className="text" ref={navRef}>
-                <img className="nav__logo" src={NavigationLogo} />
 
                 {navigationItems}
 
                 {isLoggedIn &&
-                    <button className="logout__btn" onClick={toggleLogout}>Logout</button>
+                    <button className="logout__btn" onClick={toggleLogout}>Log out</button>
                 }   
 
                 <i onClick={toggleLightMode} class="lightmode__btn fa-regular fa-sun"></i>
